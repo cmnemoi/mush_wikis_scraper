@@ -1,6 +1,6 @@
 [project]
 name = "mushpedia-scraper"
-version = "0.2.0"
+version = "0.2.1"
 description = "Scraper for mushpedia.com"
 readme = "README.md"
 requires-python = ">=3.9,<3.14"
