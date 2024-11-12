@@ -27,4 +27,7 @@ setup-git-hooks:
 test:
 	uv run pytest -v --cov=mushpedia_scraper --cov-report=xml
 
+unit:
+	uv run pytest -v tests/unit
+
 .PHONY: all check check-format check-lint check-types install lint setup-git-hooks test

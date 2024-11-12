@@ -10,6 +10,9 @@ authors = [
 ]
 dependencies = [
     "beautifulsoup4>=4.12.3",
+    "httpx>=0.27.2",
+    "requests>=2.32.3",
+    "typer>=0.13.0",
 ]
 
 [dependency-groups]
@@ -19,6 +22,8 @@ dev = [
 lint = [
     "mypy>=1.13.0",
     "ruff>=0.7.2",
+    "types-beautifulsoup4>=4.12.0.20241020",
+    "types-requests>=2.32.0.20241016",
 ]
 test = [
     "pytest>=8.3.3",
@@ -34,3 +39,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["mushpedia_scraper"]
+
+[project.scripts]
+mushpedia-scrapper = "mushpedia_scraper.cli:cli"
