@@ -25,9 +25,9 @@ setup-git-hooks:
 	git config core.hooksPath hooks
 
 test:
-	uv run pytest -v --cov=mushpedia_scraper --cov-report=xml
+	uv run pytest -vv --cov=mushpedia_scraper --cov-report=xml
 
 unit:
-	uv run pytest -v tests/unit
+	uv run pytest -vv tests/unit
 
 .PHONY: all check check-format check-lint check-types install lint setup-git-hooks test

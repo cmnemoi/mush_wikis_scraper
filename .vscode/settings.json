@@ -11,7 +11,7 @@
             "splitTerminals": [
                 {
                     "name": "watch tests",
-                    "commands": ["uv run ptw . --clear --now"]
+                    "commands": ["uv run ptw . --clear --now -vv"]
                 },
             ]
         },
