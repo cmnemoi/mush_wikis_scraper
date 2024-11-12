@@ -1,12 +1,12 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from multiprocessing import cpu_count
 from functools import wraps
-from typing import Callable, TypeVar, List
+from typing import TypeVar, List
 
 T = TypeVar("T")
 
 
-def thread_pool(func: Callable[[list[str]], List[T]]) -> Callable[[list[str]], List[T]]:
+def thread_pool(func):
     @wraps(func)
     def wrapper(self, items: List[str], *args, **kwargs) -> List[T]:
         max_workers = cpu_count() * 2
