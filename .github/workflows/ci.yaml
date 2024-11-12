@@ -1,4 +1,4 @@
-name: Continous Integration
+name: Continuous Integration
 
 on:
   push:
@@ -18,6 +18,9 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
 
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
@@ -31,8 +34,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f
         with:
-          python-version-file: ".python-version"
-      - name: Install dependencies with uv
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
         run: uv sync --locked --no-group dev --group lint
       - name: Check code format with Ruff
         run: make check-format
@@ -40,10 +43,13 @@ jobs:
         run: make check-lint
       - name: Check types with Mypy
         run: make check-types
-  
+
   test:
     name: Tests
     runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
 
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
@@ -57,8 +63,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f
         with:
-          python-version-file: ".python-version"
-      - name: Install dependencies with uv
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
         run: uv sync --locked --no-group dev --group test
       - name: Run tests with pytest
         run: make test

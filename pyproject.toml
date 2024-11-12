@@ -3,7 +3,7 @@ name = "mushpedia-scraper"
 version = "0.2.0"
 description = "Scraper for mushpedia.com"
 readme = "README.md"
-requires-python = ">=3.12,<3.13"
+requires-python = ">=3.9,<3.14"
 license = "MIT"
 authors = [
     {name = "Charles-Meldhine Madi Mnemoi", email = "charlesmeldhine.madimnemoi@gmail.com"}
