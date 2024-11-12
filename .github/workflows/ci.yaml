@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f
         with:
           python-version-file: ".python-version"
-      - name: Install dependencies
+      - name: Install dependencies with uv
         run: uv sync --locked --no-group dev --group lint
       - name: Check code format with Ruff
         run: make check-format
@@ -58,7 +58,7 @@ jobs:
         uses: actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f
         with:
           python-version-file: ".python-version"
-      - name: Install dependencies
+      - name: Install dependencies with uv
         run: uv sync --locked --no-group dev --group test
       - name: Run tests with pytest
         run: make test

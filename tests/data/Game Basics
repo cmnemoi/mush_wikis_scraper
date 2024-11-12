@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs" data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Game Basics - Mushpedia</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.6">
+<link rel="shortcut icon" href="https://www.mushpedia.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.mushpedia.com/opensearch_desc.php" title="Mushpedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://www.mushpedia.com/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Mushpedia Atom feed" href="https://www.mushpedia.com/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="http://www.mushpedia.com/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://www.mushpedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: spacekad_med1-nts_:resourceloader:filter:minify-css:7:cde5eeed024860ce08309d4f1f7199eb */</style>
+<script src="http://www.mushpedia.com/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Game_Basics","wgTitle":"Game Basics","wgCurRevisionId":12145,"wgRevisionId":12145,"wgArticleId":921,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Game_Basics","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: spacekad_med1-nts_:resourceloader:filter:minify-js:7:8d7e903275f4fc5a5ad6387c1fbe7337 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Game_Basics skin-vector action-view vector-animateLayout" cz-shortcut-listen="true">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Game Basics</span></h1>
+						<div id="bodyContent">
+								<div id="siteSub">From Mushpedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><span style="display: inline-block; background-color: rgba(190, 228, 255, 0.4); padding: 2px 5px; border-radius: 6px; border: 1px solid #8ec5ec; height: auto;"><span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/File:Blue_i.png" class="image" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Blue_i.png" width="14" height="14" class="icon-margin"></a> <b>Note</b>:</span> This page could use more info on things like the <a href="https://www.mushpedia.com/wiki/Inventory" title="Inventory">Inventory</a> / <a href="https://www.mushpedia.com/wiki/Inventory#Tools" title="Inventory">Tools</a>. Keep is short though.</span>
+</p>
+<hr>
+<p><b><a rel="nofollow" class="external text" href="http://mush.twinoid.com/">Mush</a></b> is an interstellar survival game. Unlike Motion Twin's other survival game, <b><a rel="nofollow" class="external text" href="http://www.die2nite.com/#index">Die2Nite</a></b>,
+ there is a heavy emphasis on coordination and teamwork between all 
+members on the Human and Mush teams. Survival is accomplished via doing 
+assorted tasks on the ship that will be useful to your teammates. The 
+more survivors you have on your team, the easier it gets! 
+</p><p>The plot is simple: <i><b>Alien parasites</b></i> have invaded 
+Earth, and worst yet, they have covertly taken over the Earth government
+ and are trying to wipe humanity from the Universe. 16 desperate humans 
+escape in an experimental ship to try and save Humanity from <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Mush" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Mush_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Mush" title="Mush">The Mush</a></span>, but some are already infected...
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Game_Overview"><span class="tocnumber">1</span> <span class="toctext">Game Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Teams"><span class="tocnumber">1.1</span> <span class="toctext">Teams</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Communication"><span class="tocnumber">1.2</span> <span class="toctext">Communication</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ship_Stats_to_Monitor"><span class="tocnumber">1.3</span> <span class="toctext">Ship Stats to Monitor</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Individual_Stats_to_Monitor"><span class="tocnumber">1.4</span> <span class="toctext">Individual Stats to Monitor</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Basic_Gameplay_Details"><span class="tocnumber">2</span> <span class="toctext">Basic Gameplay Details</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Actions"><span class="tocnumber">2.1</span> <span class="toctext">Actions</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Cycles"><span class="tocnumber">2.2</span> <span class="toctext">Cycles</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Game_Modes"><span class="tocnumber">2.3</span> <span class="toctext">Game Modes</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Game_Overview">Game Overview</span></h2>
+<h3><span class="mw-headline" id="Teams">Teams</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Human_Play" title="Human Play">Human Play</a></b>.</i></span> <span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Mush_Play" title="Mush Play">Mush Play</a></b>.</i></span>
+</p><p>There are two teams of players on the ship. Humans who are trying to save Humanity, and <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Mush" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Mush_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Mush" title="Mush">Mush</a></span>
+ who are trying to destroy them all.
+All 16 characters start out as humans in cryosleep, and awaken as fellow
+ Twinoid players choose who they will portray and begin playing the 
+game. Once everyone has woken up, the game starts with two randomly 
+chosen crewmates becoming Mush. (The only person that cannot be chosen 
+as an 'Alpha Mush' is <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Zhong_Chun" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Chun_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Zhong_Chun" title="Zhong Chun">Chun</a></span>, because she is immune.)
+</p><p>Bascially the human team will try to keep the ship flying and 
+find the Mush through communication and teamwork, while the Mush do 
+their best to do as much damage as possible, including turning more 
+people to their side. Besides, every character including the Mush earns <a href="https://www.mushpedia.com/wiki/Player_Resources#Human_Glory" title="Glory"><img alt="Glory" src="Game%20Basics%20-%20Mushpedia_files/Triumph.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Glory" title="Glory">Glory</a> for different actions, which will result in a ranking of (debatable) "importance" by Glory at the end of the game.
+</p><p><a href="https://www.mushpedia.com/wiki/Human_Play" title="Human Play">Human Goals:</a>
+</p>
+<ul>
+<li> Find and destroy <b>ALL</b> Mush that are on the ship.
+</li>
+<li> Study the Mush and create the Anti-Mush Serum (to help with the above and gain glory).
+</li>
+<li> Either return to Sol without Mush, or escape to Eden and start Humanity from scratch.
+</li>
+</ul>
+<p><a href="https://www.mushpedia.com/wiki/Mush_Play" title="Mush Play">Mush goals:</a>
+</p>
+<ul>
+<li> Kill or infect all Humans, e.g. by destroying the ship
+</li>
+<li> Alternatively, survive to the end to ensure the infection of Sol or Eden
+</li>
+</ul>
+<p><br>
+</p>
+<h3><span class="mw-headline" id="Communication">Communication</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Chat" title="Chat">Chat</a></b>.</i></span>
+</p><p>The most important tool you have while playing this game is communication. The tool used for this is the <a href="https://www.mushpedia.com/wiki/Chat" title="Chat">chat box</a>.
+ It appears to the right of your screen. Be sure to keep an eye on it to
+ coordinate with your fellow crew! Mush have their own private secondary
+ channel which is only visible to them, unless a special research allows
+ access to the Human crew. Favorited threads for important topics will 
+show up in their own tab. You can also have up to 3 private discussion 
+tabs open at any time. Each private discussion tab can have any number 
+of participants, but only they will be able to see what is said. Use the
+ tabs at the top of the chat box to navigate between different sections 
+of the chat.
+</p><p><br>
+</p>
+<h3><span class="mw-headline" id="Ship_Stats_to_Monitor">Ship Stats to Monitor</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Resources" title="Resources">Resources</a></b>.</i></span>
+</p><p>The following things are required for the ship to do well. 
+Running low on those is usually bad, and possibly ends the game for all 
+people playing!
+</p>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/File:Shield.png" class="image" title="Armor Icon"><img alt="Armor Icon" src="Game%20Basics%20-%20Mushpedia_files/Shield.png" width="12" height="14" class="icon-margin"></a> <b>Armor</b>, or hull integrity, is the shield icon at the top of the screen. If this reaches zero, the ship will be <b>destroyed</b>. Usually lowered by <a href="https://www.mushpedia.com/wiki/Hunters" title="Hunters">Hunters</a> attacking the ship, but also by fires or untrained pilots. The crew can use scrap metal to restore integrity.
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/File:O2.png" class="image" title="Oxygen Icon"><img alt="Oxygen Icon" src="Game%20Basics%20-%20Mushpedia_files/O2.png" width="14" height="14" class="icon-margin"></a> <b>Oxygen Level</b>
+ is listed at the top of the screen, representing the amount of O2 left 
+in the Alpha and Bravo Central Storage oxygen tanks. When this is at 
+zero, <b>one crewmate dies every cycle</b> from asphyxia (or depletes an <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Oxygen_Capsule" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/16px-Oxy_capsule.jpg" width="16" height="16" class="margin-small" srcset="Game%20Basics%20-%20Mushpedia_files/24px-Oxy_capsule.jpg 1.5x, Game%20Basics%20-%20Mushpedia_files/32px-Oxy_capsule.jpg 2x"></a> <a href="https://www.mushpedia.com/wiki/Oxygen_Capsule" title="Oxygen Capsule">Oxygen Capsule</a></span> if they are holding one). Oxygen is created by plants and can be found while exploring planets.
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/File:Pa_cook.png" class="image" title="Food Icon"><img alt="Food Icon" src="Game%20Basics%20-%20Mushpedia_files/Pa_cook.png" width="16" height="16" class="icon-margin"></a> <b>Food:</b> should be kept in the refectory. Humans not eating or drinking for too long (3+ days) causes them <b>starvation damage</b>. On the other hand, food is a valuable <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span> source when they are required for important and time-critical tasks like <a href="https://www.mushpedia.com/wiki/Piloting" title="Piloting">Piloting</a>.
+ To prevent food shortage, do not just eat unless your character has the
+ "hungry" icon, and only cook food right before eating it to prevent 
+spoilage. Food can be found while exploring.
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/File:Fuel.png" class="image" title="Fuel Icon"><img alt="Fuel Icon" src="Game%20Basics%20-%20Mushpedia_files/Fuel.png" width="14" height="14" class="icon-margin"></a> <b>Fuel Reserves</b> are listed at the top of the screen. They are kept in tanks in the Alpha and Bravo Rear Storage rooms. Fuel is <b>required to move</b> in order to escape hunters or find resources. Fuel can be found while exploring.
+</li>
+</ul>
+<p><br>
+</p>
+<h3><span class="mw-headline" id="Individual_Stats_to_Monitor">Individual Stats to Monitor</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Health" title="Health">Health</a></b>.</i></span> <span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Player_Resources" title="Player Resources">Player_Resources</a></b>.</i></span>
+</p>
+<ul>
+<li> <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span> <b>Action Points</b> are your most valuable resource, as they allow you to do things. Think before you spend those. (See 'Actions')
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/Player_Resources#Movement_Points" title="Movement Point"><img alt="Movement Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot2.png" width="11" height="13" class="icon-margin"></a> <b>Movement Points</b> are like action points, but specifically for moving from one room to another.
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/Health#Health_Points" title="Health Point"><img alt="Health Point" src="Game%20Basics%20-%20Mushpedia_files/Lp.png" width="11" height="13" class="icon-margin"></a> <b><a href="https://www.mushpedia.com/wiki/Health#Heath_Points" title="Health">Health Points</a></b>
+ show how much damage you have taken. If you run out of health, you die.
+ Health is lost by attacks from other crew members, room events like 
+falling metal, exploration events, hurting yourself during actions in 
+the ship (including failures at things like repairing equipment), fires,
+ starvation, and certain illnesses.
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/Health#Morale_Points" title="Morale"><img alt="Morale" src="Game%20Basics%20-%20Mushpedia_files/Moral.png" width="11" height="13" class="icon-margin"></a> <b><a href="https://www.mushpedia.com/wiki/Health#Morale_Points" title="Health">Morale Points</a></b>
+ show how well you are dealing with events on the ship mentally. If you 
+run out of morale, you die by suicide. Morale is lost by passing time, 
+crew deaths, eating uncooked/frozen food and random or Mush-induced 
+panic attacks. Morale can be restored by a <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Shrink" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Shrink.png" width="25" height="25" class="small-em"></a> <a href="https://www.mushpedia.com/wiki/Shrink" title="Shrink">Shrink</a></span> or an inspiring <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Leader" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Leader.png" width="25" height="25" class="small-em"></a> <a href="https://www.mushpedia.com/wiki/Leader" title="Leader">Leader</a></span>, and through various positive events.
+</li>
+</ul>
+<ul>
+<li> <a href="https://www.mushpedia.com/wiki/File:Dirty.png" class="image" title="Dirty Icon"><img alt="Dirty Icon" src="Game%20Basics%20-%20Mushpedia_files/Dirty.png" width="16" height="16" class="icon-margin"></a> <b>Dirty Status</b> lets you know when your actions have covered you in filth. As opposed to some other <a href="https://www.mushpedia.com/wiki/Status" title="Status">Character Statuses</a>, it is shown for everyone to see as an icon over your character's picture. When you get dirty, you can spend 2 <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span> to shower (or 1 <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span>
+ when holding the Soap) in one of the Dorms. This is important because 
+for one, you cannot work at a number of computer terminals when dirty, 
+and secondly because being dirty will make you a Mush suspect. Avoid it 
+by wearing the <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Stainproof_Apron" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/16px-Apron.jpg" width="16" height="16" class="margin-small" srcset="Game%20Basics%20-%20Mushpedia_files/24px-Apron.jpg 1.5x, Game%20Basics%20-%20Mushpedia_files/32px-Apron.jpg 2x"></a> <a href="https://www.mushpedia.com/wiki/Stainproof_Apron" title="Stainproof Apron">Stainproof Apron</a></span> when doing messy work like research, eating, gardening or repairs.
+</li>
+</ul>
+<p><br>
+</p>
+<h2><span class="mw-headline" id="Basic_Gameplay_Details">Basic Gameplay Details</span></h2>
+<h3><span class="mw-headline" id="Actions">Actions</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Actions" title="Actions">Actions</a></b>.</i></span>
+</p><p><a href="https://www.mushpedia.com/wiki/Actions" title="Actions">Actions</a> are events that use up Action Points (<span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span>).
+ Every action gets logged in the room for later viewing. However, not 
+everyone can see the log of every action, with some only visible to 
+yourself. Be sure you are familiar with your actions' <a href="https://www.mushpedia.com/wiki/Privacy_Levels" title="Privacy Levels">Privacy Levels</a> before doing them, if there are things you might want to keep a secret.
+</p><p>In general, the actions that you perform and that the crew expects of you will greatly depend on which <a href="https://www.mushpedia.com/wiki/Characters" title="Characters">Character</a> you are playing. Some roles are more defined than others, from dedicated specialists like <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Paola_Rinaldo" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Paola_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Paola_Rinaldo" title="Paola Rinaldo">Paola</a></span> (who has an important job that only she can do) to generalists like <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Gioele_Rinaldo" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Gioele_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Gioele_Rinaldo" title="Gioele Rinaldo">Gioele</a></span> who can help with just about anything.
+</p><p>Of course the ship's situation is a big factor as well. Things 
+like effective research, defense, NERON projects or going on expeditions
+ to get more oxygen are all important. As is not wasting your energy 
+running back and forth. So plan your actions before you act, ideally 
+with the rest of the crew, as this will make you more effective.
+</p><p>Some actions are "<a href="https://www.mushpedia.com/wiki/Aggression" title="Aggression">Aggressive</a>" and, when unexplained, may result in the player being attacked in retaliation. They will also cost an additional 2 <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span> if Ian (the <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Ian_Soulton" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Pacifist.png" width="16" height="16" class="margin-small"></a> Pacifist</span>) is in the room, and cannot be performed when a Diplomat has called a temporary ceasefire.
+</p><p><span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Mush" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Mush_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Mush" title="Mush">Mush</a></span> players have additional actions... most of which you do not want to perform under a camera, or even with people in the room.
+</p><p><br>
+</p>
+<h3><span class="mw-headline" id="Cycles">Cycles</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Events_at_Cycle_Change" title="Events at Cycle Change">Events at Cycle Change</a></b>.</i></span>
+</p><p>A new cycle happens every three hours. A new day starts at 1 am, French time. <a rel="nofollow" class="external text" href="http://www.worldtimeserver.com/current_time_in_FR.aspx">Click to see current game time.</a> Each cycle the following events occur:
+</p>
+<ul>
+<li> +1 <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span>, +1 <a href="https://www.mushpedia.com/wiki/Player_Resources#Movement_Points" title="Movement Point"><img alt="Movement Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot2.png" width="11" height="13" class="icon-margin"></a>
+</li>
+<li> +1 <span style="white-space:nowrap"><a href="https://www.mushpedia.com/wiki/Player_Resources#Action_Points" title="Action Point"><img alt="Action Point" src="Game%20Basics%20-%20Mushpedia_files/Pa_slot1.png" width="11" height="13" class="icon-margin"></a></span> if lying in a <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Bed" title="Bed">bed</a></span>
+</li>
+<li> +1 <a href="https://www.mushpedia.com/wiki/Player_Resources#Experience" title="XP"><img alt="XP" src="Game%20Basics%20-%20Mushpedia_files/Xp.png" width="16" height="16" class="icon-margin"></a> (2 <a href="https://www.mushpedia.com/wiki/Player_Resources#Experience" title="XP"><img alt="XP" src="Game%20Basics%20-%20Mushpedia_files/Xp.png" width="16" height="16" class="icon-margin"></a> If you're playing in <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Gold.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Game Modes">Gold Mode</a></span>)
+</li>
+<li> -1 <a href="https://www.mushpedia.com/wiki/Resources#Oxygen" title="Oxygen"><img alt="Oxygen" src="Game%20Basics%20-%20Mushpedia_files/O2.png" width="14" height="14" class="icon-margin"></a> Oxygen from the ship's stores (1 more for each tank that is leaking)
+</li>
+<li> -1 point of food <a href="https://www.mushpedia.com/wiki/Health#Satisfaction" title="Health">Satisfaction</a> (usually invisible)
+</li>
+</ul>
+<p>Many more events may happen depending on your character and the 
+situation. Hunters will fire, things can break, fires spread etc. 
+Furthermore, Day Change (between C8 and C1) will result in the daily 
+loss of morale, the replenishment of skill points and new spores to pull
+ for the Mush, among other things.
+</p><p><br>
+</p>
+<h3><span class="mw-headline" id="Game_Modes">Game Modes</span></h3>
+<p><span class="template-main"><a href="https://www.mushpedia.com/wiki/File:Magnifier.png" class="image" title="More info"><img alt="More info" src="Game%20Basics%20-%20Mushpedia_files/Magnifier.png" width="20" height="20" class="small-20"></a> <i>Main article: <b><a href="https://www.mushpedia.com/wiki/Game_Modes" title="Game Modes">Game Modes</a></b>.</i></span>
+</p><p>There are three overall Game Modes: <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Bronze_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Bronze.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Bronze_Mode" title="Game Modes">Bronze</a></span>, <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Silver_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Silver.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Silver_Mode" title="Game Modes">Silver</a></span> and <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Gold.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Game Modes">Gold</a></span>.
+</p><p><span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Bronze_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Bronze.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Bronze_Mode" title="Game Modes">Bronze Mode</a></span> is the standard non-paying mode in which the game is played.
+In Bronze Mode, your character will have just one free <a href="https://www.mushpedia.com/wiki/Skills" title="Skills">Skill</a> slot (plus another slot for <span style="white-space:nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Mush" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Mush_icon.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Mush" title="Mush">Mush</a></span> skills if they are a <i>Mush</i>). There are no extra perks to this mode.
+</p><p><span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Silver_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Silver.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Silver_Mode" title="Game Modes">Silver Mode</a></span>
+ is unlocked by buying Gold Days at least once and it's the mode you'll 
+be in after your Gold Days run out. Gold Days rewarded from competitions
+ do not usually trigger <i>Silver Mode</i>. In <i>Silver Mode</i>, your character will have two skill slots if human, and two additional Mush skill slots if Mush.
+</p><p><span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Gold.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Game Modes">Gold Mode</a></span> is a paid mode of the game, with assorted benefits.
+To play in <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Gold.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Gold_Mode" title="Game Modes">Gold Mode</a></span>,
+ you need to have Gold Days on your account. Gold Days do not count down
+ while you are not on a ship. While you have Gold Days, you cannot play 
+in <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Bronze_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Bronze.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Bronze_Mode" title="Game Modes">Bronze Mode</a></span> or <span style="white-space: nowrap; font-weight: bold;"><a href="https://www.mushpedia.com/wiki/Game_Modes#Silver_Mode" title="Icon"><img alt="Icon" src="Game%20Basics%20-%20Mushpedia_files/Silver.png" width="16" height="16" class="icon-margin"></a> <a href="https://www.mushpedia.com/wiki/Game_Modes#Silver_Mode" title="Game Modes">Silver Mode</a></span>. Gold Mode players have 2 higher maximum <a href="https://www.mushpedia.com/wiki/Health#Health_Points" title="Health Point"><img alt="Health Point" src="Game%20Basics%20-%20Mushpedia_files/Lp.png" width="11" height="13" class="icon-margin"></a> and <a href="https://www.mushpedia.com/wiki/Health#Morale_Points" title="Morale"><img alt="Morale" src="Game%20Basics%20-%20Mushpedia_files/Moral.png" width="11" height="13" class="icon-margin"></a>, and up to 4 Human and Mush skills. Those skills will be retained for the remainder of a ship even after Gold Days run out.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.346 seconds
+Real time usage: 0.393 seconds
+Preprocessor visited node count: 1166/1000000
+Preprocessor generated node count: 6119/1000000
+Post‐expand include size: 9922/2097152 bytes
+Template argument size: 502/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key spacekad_med1-nts_:pcache:idhash:921-0!*!0!!en!2!* and timestamp 20241112061254 and revision id 12145
+ -->
+</div>								<div class="printfooter">
+				Retrieved from "<a href="http://www.mushpedia.com/index.php?title=Game_Basics&amp;oldid=12145">http://www.mushpedia.com/index.php?title=Game_Basics&amp;oldid=12145</a>"				</div>
+												<div id="catlinks" class="catlinks catlinks-allhidden"></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-anonuserpage"><a href="https://www.mushpedia.com/wiki/User:80.214.118.87" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">80.214.118.87</a></li><li id="pt-anontalk"><a href="https://www.mushpedia.com/wiki/User_talk:80.214.118.87" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li><li id="pt-createaccount"><a href="https://www.mushpedia.com/index.php?title=Special:UserLogin&amp;returnto=Game+Basics&amp;type=signup">Create account</a></li><li id="pt-login"><a href="https://www.mushpedia.com/index.php?title=Special:UserLogin&amp;returnto=Game+Basics" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="https://www.mushpedia.com/wiki/Game_Basics" title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="https://www.mushpedia.com/index.php?title=Talk:Game_Basics&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="https://www.mushpedia.com/wiki/Game_Basics">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="https://www.mushpedia.com/index.php?title=Game_Basics&amp;action=edit" title="This page is protected.
+You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="https://www.mushpedia.com/index.php?title=Game_Basics&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Mushpedia [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel">
+					<div id="p-logo" role="banner"><a style="background-image: url(http://mushpedia.com/skins/common/images/mush_logo.png);" href="https://www.mushpedia.com/wiki/Main_Page" title="Visit the main page"></a></div>
+				<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="https://www.mushpedia.com/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-recentchanges"><a href="https://www.mushpedia.com/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-News"><a href="https://www.mushpedia.com/wiki/Mushpedia:News">News</a></li>
+			<li id="n-randompage"><a href="https://www.mushpedia.com/wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label">Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="https://www.mushpedia.com/wiki/Special:WhatLinksHere/Game_Basics" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="https://www.mushpedia.com/wiki/Special:RecentChangesLinked/Game_Basics" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="https://www.mushpedia.com/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="https://www.mushpedia.com/index.php?title=Game_Basics&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="https://www.mushpedia.com/index.php?title=Game_Basics&amp;oldid=12145" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="https://www.mushpedia.com/index.php?title=Game_Basics&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 9 February 2016, at 01:43.</li>
+											<li id="footer-info-viewcount">This page has been accessed 63,877 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://www.mushpedia.com/wiki/Mushpedia:Privacy_policy" title="Mushpedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://www.mushpedia.com/wiki/Mushpedia:About" title="Mushpedia:About">About Mushpedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://www.mushpedia.com/wiki/Mushpedia:General_disclaimer" title="Mushpedia:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="Game%20Basics%20-%20Mushpedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="http://www.mushpedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":56});
+}</script>
+	
+
+</body></html>
