@@ -5,6 +5,12 @@
 
 Scraper for https://mushpedia.com/
 
+# Usage
+
+Install with `python -m pip install --user mushpedia-scraper`
+
+Then run `python mushpedia-scraper` in your terminal. For the moment, the raw HTML pages are printed to the terminal.
+
 # Contributing
 
 You need to have `curl` and [`uv`](https://docs.astral.sh/uv/getting-started/installation/) installed on your system.
