@@ -12,7 +12,7 @@ class ScrapeMushpedia:
     def __init__(self, page_reader: PageReader) -> None:
         self.page_reader = page_reader
 
-    def execute(self, mushpedia_links: list[str], workers: int = None) -> list[str]:
+    def execute(self, mushpedia_links: list[str], workers: int = -1) -> list[str]:
         """Execute the use case on the given Mushpedia links.
 
         Args:
@@ -22,8 +22,7 @@ class ScrapeMushpedia:
             list[str]: A list of scrapped Mushpedia articles in HTML format.
         """
         results = []
-        workers = min(workers or cpu_count(), len(mushpedia_links))
-        with ThreadPoolExecutor(max_workers=workers) as executor:
+        with ThreadPoolExecutor(max_workers=self._get_workers(workers)) as executor:
             # Submit all scraping tasks
             future_to_url = {executor.submit(self._scrap_page_reader, url): url for url in mushpedia_links}
 
@@ -41,3 +40,6 @@ class ScrapeMushpedia:
     def _scrap_page_reader(self, page_reader_link: str) -> str:
         page_reader = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
         return page_reader.prettify()
+
+    def _get_workers(self, workers: int) -> int:
+        return cpu_count() if workers == -1 else min(workers, cpu_count())
