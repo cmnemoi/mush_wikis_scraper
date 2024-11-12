@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## v0.2.1 (2024-11-12)
+
+### Bug Fixes
+
+- Package supports Python 3.9+
+  ([`585d143`](https://github.com/cmnemoi/mushpedia_scraper/commit/585d14351904450911a95fe0f12047ac230bf58f))
+
+### Continuous Integration
+
+- Add a matrix to ensure the package works on all Python 3.9+ versions
+  ([`b79dbfe`](https://github.com/cmnemoi/mushpedia_scraper/commit/b79dbfea52e836f1226936ef2addc73ab8148292))
+
+### Documentation
+
+- Add PyPI badge to RADME
+  ([`2d4354d`](https://github.com/cmnemoi/mushpedia_scraper/commit/2d4354d6a62d87fb8ea58a47652b9acb90c5be36))
+
+
 ## v0.2.0 (2024-11-12)
 
 ### Continuous Integration
