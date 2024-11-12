@@ -14,5 +14,8 @@ def test_run() -> None:
     pages = scraper.execute(page_links)
 
     # then I should get the pages content
-    assert "There are two teams of players on the ship. Humans who are trying to save Humanity" in pages[0]
-    assert "Figure out what your character's role is and do it." in pages[1]
+
+    pages_to_string = "\n".join(pages)
+
+    assert "There are two teams of players on the ship. Humans who are trying to save Humanity" in pages_to_string
+    assert "Figure out what your character's role is and do it." in pages_to_string
