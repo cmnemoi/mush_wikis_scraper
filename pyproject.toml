@@ -41,4 +41,4 @@ build-backend = "hatchling.build"
 packages = ["mushpedia_scraper"]
 
 [project.scripts]
-mushpedia-scrapper = "mushpedia_scraper.cli:cli"
+mushpedia-scraper = "mushpedia_scraper.cli:cli"
