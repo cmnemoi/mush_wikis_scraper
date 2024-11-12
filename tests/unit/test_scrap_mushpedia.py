@@ -19,7 +19,7 @@ from mushpedia_scraper.usecases.scrap_mushpedia import ScrapeMushpedia
         },
     ],
 )
-def test_run(page_data) -> None:
+def test_execute(page_data) -> None:
     # given I have page links
     page_links = [page_data["link"]]
 
@@ -35,13 +35,66 @@ def test_run(page_data) -> None:
     assert page_data["expected_content"] in page["content"]
 
 
-def test_remove_line_breaks() -> None:
+@pytest.mark.parametrize(
+    "format",
+    [
+        "html",
+        "text",
+    ],
+)
+def test_remove_line_breaks(format: str) -> None:
     # given I have page links
     page_links = ["tests/data/Game Basics"]
 
     # when I run the scraper
     scraper = ScrapeMushpedia(FileSystemPageReader())
-    pages = scraper.execute(page_links)
+    pages = scraper.execute(page_links, format=format)
 
     # then I should get the pages content without line breaks
     assert pages[0]["content"].count("\n") == 0
+
+
+def test_execute_with_html_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapeMushpedia(FileSystemPageReader())
+    pages = scraper.execute(page_links, format="html")
+
+    # then I should get the pages content in HTML format
+    assert pages[0]["content"].startswith("<!DOCTYPE html>")
+
+
+def test_execute_with_text_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapeMushpedia(FileSystemPageReader())
+    pages = scraper.execute(page_links, format="text")
+
+    # then I should get the pages content without HTML tags
+    assert "<!DOCTYPE html>" not in pages[0]["content"]
+
+
+def test_execute_with_markdown_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapeMushpedia(FileSystemPageReader())
+    pages = scraper.execute(page_links, format="markdown")
+
+    # then I should get the pages content in Markdown format
+    assert "#  Game Basics" in pages[0]["content"]
+
+
+def test_execute_with_unknown_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapeMushpedia(FileSystemPageReader())
+    with pytest.raises(ValueError):
+        scraper.execute(page_links, format="unknown")

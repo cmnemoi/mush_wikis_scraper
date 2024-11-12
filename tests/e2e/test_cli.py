@@ -5,10 +5,11 @@ from mushpedia_scraper.cli import cli
 runner = CliRunner()
 
 
-def test_app():
-    result = runner.invoke(cli, ["--limit", "2"])
+def test_cli():
+    result = runner.invoke(cli, ["--limit", "2", "--format", "markdown"])
     assert result.exit_code == 0
     assert (
-        "A basic action is an action that all players have and does not need to be unlocked by choosing a skill."
+        "Happens automatically when taking **any** other action, or clicking on anywhere in the room other than inventory (clicking on people makes you stand up too)"
         in result.stdout
     )
+    assert "#  Actions" in result.stdout
