@@ -1,21 +1,35 @@
+import pytest
+
 from mushpedia_scraper.adapters.file_system_page_reader import FileSystemPageReader
 from mushpedia_scraper.usecases.scrap_mushpedia import ScrapeMushpedia
 
 
-def test_run() -> None:
+@pytest.mark.parametrize(
+    "page_data",
+    [
+        {
+            "title": "Game Basics",
+            "link": "tests/data/Game Basics",
+            "expected_content": "There are two teams of players on the ship. Humans who are trying to save Humanity",
+        },
+        {
+            "title": "Human Play",
+            "link": "tests/data/Human Play",
+            "expected_content": "Figure out what your character's role is and do it.",
+        },
+    ],
+)
+def test_run(page_data) -> None:
     # given I have page links
-    page_links = [
-        "tests/data/Game Basics - Mushpedia.html",
-        "tests/data/Human Play - Mushpedia.html",
-    ]
+    page_links = [page_data["link"]]
 
     # when I run the scraper
     scraper = ScrapeMushpedia(FileSystemPageReader())
     pages = scraper.execute(page_links)
 
     # then I should get the pages content
-
-    pages_to_string = "\n".join(pages)
-
-    assert "There are two teams of players on the ship. Humans who are trying to save Humanity" in pages_to_string
-    assert "Figure out what your character's role is and do it." in pages_to_string
+    page = pages[0]
+    assert list(page.keys()) == ["title", "link", "content"]
+    assert page["title"] == page_data["title"]
+    assert page["link"] == page_data["link"]
+    assert page_data["expected_content"] in page["content"]

@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 
 from mushpedia_scraper.ports.page_reader import PageReader
-from mushpedia_scraper.thread_pool_decorator import thread_pool
+
+ScrapingResult = dict[str, str]
 
 
 class ScrapeMushpedia:
@@ -10,17 +11,18 @@ class ScrapeMushpedia:
     def __init__(self, page_reader: PageReader) -> None:
         self.page_reader = page_reader
 
-    @thread_pool
-    def execute(self, mushpedia_links: list[str]) -> list[str]:
+    def execute(self, mushpedia_links: list[str]) -> list[ScrapingResult]:
         """Execute the use case on the given Mushpedia links.
 
         Args:
             mushpedia_links (list[str]): A list of Mushpedia article links.
 
         Returns:
-            list[str]: A list of scrapped Mushpedia articles in HTML format.
+            list[ScrapingResult]: A list of scrapped Mushpedia articles with article title, link and content in HTML format.
         """
-        return mushpedia_links
+        return [
+            {"title": link.split("/")[-1], "link": link, "content": self._scrap_page(link)} for link in mushpedia_links
+        ]
 
     def _scrap_page(self, page_reader_link: str) -> str:
         page_reader = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
