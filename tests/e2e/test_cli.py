@@ -8,4 +8,7 @@ runner = CliRunner()
 def test_app():
     result = runner.invoke(cli)
     assert result.exit_code == 0
-    assert "There are two teams of players on the ship. Humans who are trying to save Humanity" in result.stdout
+    assert (
+        "A basic action is an action that all players have and does not need to be unlocked by choosing a skill."
+        in result.stdout
+    )

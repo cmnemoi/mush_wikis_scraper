@@ -14,7 +14,3 @@ def main() -> None:
     pages = scraper.execute(LINKS)
     for page in pages:
         print(page)
-
-
-if __name__ == "__main__":
-    cli()
