@@ -6,7 +6,7 @@ runner = CliRunner()
 
 
 def test_app():
-    result = runner.invoke(cli)
+    result = runner.invoke(cli, ["--limit", "2"])
     assert result.exit_code == 0
     assert (
         "A basic action is an action that all players have and does not need to be unlocked by choosing a skill."
