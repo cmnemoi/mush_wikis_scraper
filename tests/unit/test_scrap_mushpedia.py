@@ -33,3 +33,15 @@ def test_run(page_data) -> None:
     assert page["title"] == page_data["title"]
     assert page["link"] == page_data["link"]
     assert page_data["expected_content"] in page["content"]
+
+
+def test_remove_line_breaks() -> None:
+    # given I have page links
+    page_links = ["tests/data/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapeMushpedia(FileSystemPageReader())
+    pages = scraper.execute(page_links)
+
+    # then I should get the pages content without line breaks
+    assert pages[0]["content"].count("\n") == 0

@@ -35,7 +35,7 @@ class ScrapeMushpedia:
 
     def _scrap_page(self, page_reader_link: str) -> str:
         page_reader = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
-        return page_reader.prettify()
+        return page_reader.prettify().replace("\n", "")
 
     def _get_workers(self, max_workers: int, mushpedia_links: list[str]) -> int:
         workers = max_workers if max_workers > 0 else 2 * cpu_count()
