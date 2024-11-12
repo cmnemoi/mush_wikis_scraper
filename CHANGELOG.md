@@ -1,6 +1,30 @@
 # CHANGELOG
 
 
+## v0.3.0 (2024-11-12)
+
+### Bug Fixes
+
+- Remove line breaks from scrapped HTML markup
+  ([`1e93e1c`](https://github.com/cmnemoi/mushpedia_scraper/commit/1e93e1c40c6d6e98cdb6ed994999b599d14f7855))
+
+### Chores
+
+- Launch pytest with full verbosity
+  ([`0a4b240`](https://github.com/cmnemoi/mushpedia_scraper/commit/0a4b24059c6e7a2c9c8ce9f32b578c849269d9c6))
+
+- Bump to 100% code coverage by not covering no-op paths
+  ([`66fd499`](https://github.com/cmnemoi/mushpedia_scraper/commit/66fd4991138b4e2278f5e70a8d554992a165b5c4))
+
+### Features
+
+- Add `--format` with HTML, raw text and Markdown options
+  ([`c4d300d`](https://github.com/cmnemoi/mushpedia_scraper/commit/c4d300dda4b78d38a4446cad010dbc3fb0ed80d0))
+
+- Add a `--limit` option to the CLI
+  ([`9510499`](https://github.com/cmnemoi/mushpedia_scraper/commit/9510499a543238b53dbd8e7ad08300ba7cefcb95))
+
+
 ## v0.2.1 (2024-11-12)
 
 ### Bug Fixes
