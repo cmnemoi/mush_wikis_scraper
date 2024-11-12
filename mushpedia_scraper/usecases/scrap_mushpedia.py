@@ -24,7 +24,7 @@ class ScrapeMushpedia:
         results = []
         with ThreadPoolExecutor(max_workers=self._get_workers(workers)) as executor:
             # Submit all scraping tasks
-            future_to_url = {executor.submit(self._scrap_page_reader, url): url for url in mushpedia_links}
+            future_to_url = {executor.submit(self._scrap_page, url): url for url in mushpedia_links}
 
             # Collect results as they complete
             for future in as_completed(future_to_url):
@@ -37,7 +37,7 @@ class ScrapeMushpedia:
 
         return results
 
-    def _scrap_page_reader(self, page_reader_link: str) -> str:
+    def _scrap_page(self, page_reader_link: str) -> str:
         page_reader = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
         return page_reader.prettify()
 
