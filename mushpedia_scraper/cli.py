@@ -1,3 +1,5 @@
+import json
+
 import typer
 
 from mushpedia_scraper.adapters import HttpPageReader
@@ -17,5 +19,4 @@ def main(
 
     scraper = ScrapeMushpedia(HttpPageReader())
     pages = scraper.execute(LINKS[:nb_pages_to_scrap], format=format)
-    for page in pages:
-        print(page)
+    print(json.dumps(pages, indent=4))
