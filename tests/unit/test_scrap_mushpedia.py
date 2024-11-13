@@ -87,7 +87,7 @@ def test_execute_with_markdown_format() -> None:
     pages = scraper.execute(page_links, format="markdown")
 
     # then I should get the pages content in Markdown format
-    assert "#  Game Basics" in pages[0]["content"]
+    assert "Game Basics===========" in pages[0]["content"]
 
 
 def test_execute_with_unknown_format() -> None:

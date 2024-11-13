@@ -2,7 +2,7 @@ from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import cpu_count
 
 from bs4 import BeautifulSoup
-from html2text import HTML2Text
+from markdownify import MarkdownConverter  # type: ignore
 
 from mushpedia_scraper.ports.page_reader import PageReader
 
@@ -43,7 +43,7 @@ class ScrapeMushpedia:
             case "text":
                 return page_reader.get_text().replace("\n", "")
             case "markdown":
-                return HTML2Text().handle(page_reader.prettify())
+                return MarkdownConverter().convert_soup(page_reader).replace("\n", "")
             case _:
                 raise ValueError(f"Unknown format: {format}")
 
