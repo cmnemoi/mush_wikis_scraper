@@ -1,7 +1,20 @@
 # CHANGELOG
 
 
-## v0.3.0 (2024-11-12)
+## v0.3.1 (2024-11-13)
+
+### Bug Fixes
+
+- Migrate from `html2text` to `markdownify`
+  ([`c3a46d4`](https://github.com/cmnemoi/mushpedia_scraper/commit/c3a46d4307482af63e8e74ea8e695667b9998fcf))
+
+### Documentation
+
+- Update README with the new `--format` option
+  ([`f76ee89`](https://github.com/cmnemoi/mushpedia_scraper/commit/f76ee896b20534fc78cb2638bccfa2a937168055))
+
+
+## v0.3.0 (2024-11-13)
 
 ### Bug Fixes
 
