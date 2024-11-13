@@ -36,14 +36,14 @@ class ScrapeMushpedia:
         ]
 
     def _scrap_page(self, page_reader_link: str, format: str) -> str:
-        page_reader = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
+        page_parser = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
         match format:
             case "html":
-                return page_reader.prettify().replace("\n", "")
+                return page_parser.prettify().replace("\n", "")
             case "text":
-                return page_reader.get_text().replace("\n", "")
+                return page_parser.get_text()
             case "markdown":
-                return MarkdownConverter().convert_soup(page_reader).replace("\n", "")
+                return MarkdownConverter().convert_soup(page_parser)
             case _:
                 raise ValueError(f"Unknown format: {format}")
 

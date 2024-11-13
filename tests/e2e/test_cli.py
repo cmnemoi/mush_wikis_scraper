@@ -12,4 +12,4 @@ def test_cli():
         "Happens automatically when taking **any** other action, or clicking on anywhere in the room other than inventory (clicking on people makes you stand up too)"
         in result.stdout
     )
-    assert "Actions=======" in result.stdout
+    assert "Actions\\n=======" in result.stdout
