@@ -1,6 +1,35 @@
 # CHANGELOG
 
 
+## v0.6.0 (2024-11-14)
+
+### Bug Fixes
+
+- More tolerant timeout
+  ([`d4d1d00`](https://github.com/cmnemoi/mush_wikis_scraper/commit/d4d1d009f7824af3593e6aa7bac57f5cce05f070))
+
+- Remove some duplicated links to scrap
+  ([`c3ed71a`](https://github.com/cmnemoi/mush_wikis_scraper/commit/c3ed71a54d197cb4ad044e838aeb19d92bc02d4a))
+
+- Fix a crash when scraping some Twinpedia pages
+  ([`eddba57`](https://github.com/cmnemoi/mush_wikis_scraper/commit/eddba5743de97114cd6656e0cc799a2e54c54cfb))
+
+### Code Style
+
+- Apply linter fixes
+  ([`f66e6cc`](https://github.com/cmnemoi/mush_wikis_scraper/commit/f66e6cc53a297bead3fbc11e3a94c8c5e741bb1b))
+
+### Documentation
+
+- Update badge links in README
+  ([`7a163bc`](https://github.com/cmnemoi/mush_wikis_scraper/commit/7a163bcbb60c5bd944e2e08820914e457213eda8))
+
+### Features
+
+- Add a progress bar
+  ([`6403e6d`](https://github.com/cmnemoi/mush_wikis_scraper/commit/6403e6da61b6ee410bbc29be4509f46383c76792))
+
+
 ## v0.5.0 (2024-11-14)
 
 ### Features
