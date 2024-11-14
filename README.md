@@ -1,19 +1,19 @@
-# Mushpedia Scraper
+# Mush wikis scraper
 
 [![Continous Integration](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/ci.yaml/badge.svg)](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/ci.yaml) 
 [![Continous Delivery](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/publish_to_pypi.yaml/badge.svg)](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/publish_to_pypi.yaml)
 [![codecov](https://codecov.io/gh/cmnemoi/mushpedia_scraper/graph/badge.svg?token=FLAARH38AG)](https://codecov.io/gh/cmnemoi/mushpedia_scraper)
 [![PyPI version](https://badge.fury.io/py/mushpedia-scraper.svg)](https://badge.fury.io/py/mushpedia-scraper)
 
-Scraper for https://mushpedia.com/
+Scraper for http://mushpedia.com/ and http://twin.tithom.fr/mush/
 
 # Usage
 
-Install with `python -m pip install --user mushpedia-scraper`
+Install with `python -m pip install --user mush-wikis-scraper`
 
-Then run `python mushpedia-scraper` in your terminal. The package supports 3 formats: `html`, `text` and `markdown` with the `--format` option.
+Then run `python mush-wikis-scrap` in your terminal. The package supports 3 formats: `html`, `text` and `markdown` with the `--format` option.
 
-The result will be printed to the terminal. You can redirect it to a file with `python mushpedia-scraper > output`.
+The result will be printed to the terminal. You can redirect it to a file with `python mush-wikis-scrap > output`.
 
 # Contributing
 

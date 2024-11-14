@@ -2,9 +2,9 @@ import json
 
 import typer
 
-from mushpedia_scraper.adapters import HttpPageReader
-from mushpedia_scraper.usecases.scrap_mushpedia import ScrapeMushpedia
-from mushpedia_scraper.links import LINKS
+from mush_wikis_scraper.adapters import HttpPageReader
+from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
+from mush_wikis_scraper.links import LINKS
 
 cli = typer.Typer()
 
@@ -17,6 +17,6 @@ def main(
     """Scrap http://mushpedia.com."""
     nb_pages_to_scrap = limit if limit else len(LINKS)
 
-    scraper = ScrapeMushpedia(HttpPageReader())
+    scraper = ScrapWikis(HttpPageReader())
     pages = scraper.execute(LINKS[:nb_pages_to_scrap], format=format)
     print(json.dumps(pages, indent=4))

@@ -1,6 +1,6 @@
 from typer.testing import CliRunner
 
-from mushpedia_scraper.cli import cli
+from mush_wikis_scraper.cli import cli
 
 runner = CliRunner()
 

@@ -1,7 +1,7 @@
 import pytest
 
-from mushpedia_scraper.adapters.file_system_page_reader import FileSystemPageReader
-from mushpedia_scraper.usecases.scrap_mushpedia import ScrapeMushpedia
+from mush_wikis_scraper.adapters.file_system_page_reader import FileSystemPageReader
+from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
 
 
 @pytest.mark.parametrize(
@@ -24,7 +24,7 @@ def test_execute(page_data) -> None:
     page_links = [page_data["link"]]
 
     # when I run the scraper
-    scraper = ScrapeMushpedia(FileSystemPageReader())
+    scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links)
 
     # then I should get the pages content
@@ -44,7 +44,7 @@ def test_remove_line_breaks(format: str) -> None:
     page_links = ["tests/data/Game Basics"]
 
     # when I run the scraper
-    scraper = ScrapeMushpedia(FileSystemPageReader())
+    scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format=format)
 
     # then I should get the pages content without line breaks
@@ -56,7 +56,7 @@ def test_execute_with_html_format() -> None:
     page_links = ["tests/data/Game Basics"]
 
     # when I run the scraper
-    scraper = ScrapeMushpedia(FileSystemPageReader())
+    scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="html")
 
     # then I should get the pages content in HTML format
@@ -68,7 +68,7 @@ def test_execute_with_text_format() -> None:
     page_links = ["tests/data/Game Basics"]
 
     # when I run the scraper
-    scraper = ScrapeMushpedia(FileSystemPageReader())
+    scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="text")
 
     # then I should get the pages content without HTML tags
@@ -80,7 +80,7 @@ def test_execute_with_markdown_format() -> None:
     page_links = ["tests/data/Game Basics"]
 
     # when I run the scraper
-    scraper = ScrapeMushpedia(FileSystemPageReader())
+    scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="markdown")
 
     # then I should get the pages content in Markdown format
@@ -92,6 +92,6 @@ def test_execute_with_unknown_format() -> None:
     page_links = ["tests/data/Game Basics"]
 
     # when I run the scraper
-    scraper = ScrapeMushpedia(FileSystemPageReader())
+    scraper = ScrapWikis(FileSystemPageReader())
     with pytest.raises(ValueError):
         scraper.execute(page_links, format="unknown")

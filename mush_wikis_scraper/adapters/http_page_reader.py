@@ -1,6 +1,6 @@
 import httpx
 
-from mushpedia_scraper.ports.page_reader import PageReader
+from mush_wikis_scraper.ports.page_reader import PageReader
 
 
 class HttpPageReader(PageReader):

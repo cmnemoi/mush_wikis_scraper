@@ -25,7 +25,7 @@ setup-git-hooks:
 	git config core.hooksPath hooks
 
 test:
-	uv run pytest -vv --cov=mushpedia_scraper --cov-report=xml
+	uv run pytest -vv --cov=mush_wikis_scraper --cov-report=xml
 
 unit:
 	uv run pytest -vv tests/unit
