@@ -35,7 +35,12 @@ class ScrapWikis:
             results = list(executor.map(self._scrap_page, wiki_links, [format] * len(wiki_links)))
 
         return [
-            {"title": link.split("/")[-1], "link": link, "content": result}
+            {
+                "title": self._get_title_from_link(link),
+                "link": link,
+                "source": self._get_source_from_link(link),
+                "content": result,
+            }
             for link, result in zip(wiki_links, results)
         ]
 
@@ -55,3 +60,26 @@ class ScrapWikis:
         workers = max_workers if max_workers > 0 else 2 * cpu_count()
 
         return min(workers, len(wiki_links))
+
+    def _get_source_from_link(self, link: str) -> str:
+        if "mushpedia" in link:
+            return "Mushpedia"
+        elif "twin.tithom.fr" in link:
+            return "Twinpedia"
+        else:
+            raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
+
+    def _get_title_from_link(self, link: str) -> str:
+        source = self._get_source_from_link(link)
+        parts = link.split("/")
+
+        if source == "Mushpedia":
+            return parts[-1]
+
+        if source == "Twinpedia":
+            if len(parts) == 5:  # 4 slashes
+                return parts[-1].capitalize()
+            elif len(parts) == 6:  # 5 slashes
+                return f"{parts[-2].capitalize()} - {parts[-1].capitalize()}"
+
+        raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
