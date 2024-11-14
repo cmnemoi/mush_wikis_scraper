@@ -10,7 +10,7 @@ ScrapingResult = dict[str, str]
 
 
 class ScrapWikis:
-    def __init__(self, page_reader: PageReader) -> None:
+    def __init__(self, page_reader: PageReader, progress_callback: callable = None) -> None:
         """Scraper for Mushpedia and Twinpedia.
 
         Args:
@@ -18,6 +18,7 @@ class ScrapWikis:
             Adapters available are currently `FileSystemPageReader` and `HttpPageReader` from the `adapter` module.
         """
         self.page_reader = page_reader
+        self.progress_callback = progress_callback
 
     def execute(self, wiki_links: list[str], max_workers: int = -1, format: str = "html") -> list[ScrapingResult]:
         """Execute the use case on the given links.
@@ -46,6 +47,8 @@ class ScrapWikis:
 
     def _scrap_page(self, page_reader_link: str, format: str) -> str:
         page_parser = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
+        if self.progress_callback:
+            self.progress_callback(1)
         match format:
             case "html":
                 return page_parser.prettify().replace("\n", "")
