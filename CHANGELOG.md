@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v0.4.0 (2024-11-14)
+
+### Bug Fixes
+
+- Scraper now supports HTTP redirections
+  ([`bb9cb69`](https://github.com/cmnemoi/mushpedia_scraper/commit/bb9cb6966089756ae0289748b9468da4b5d2cbff))
+
+### Features
+
+- Output format is now a valid JSON
+  ([`78da433`](https://github.com/cmnemoi/mushpedia_scraper/commit/78da433d27b1532760cf215394d045f2b7859f60))
+
+- Do not remove line break for plain text and markdown output formats
+  ([`7ab2245`](https://github.com/cmnemoi/mushpedia_scraper/commit/7ab2245d5a9379174c41c4fd138717810c1263d4))
+
+
 ## v0.3.1 (2024-11-13)
 
 ### Bug Fixes
