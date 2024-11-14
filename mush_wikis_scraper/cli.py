@@ -18,7 +18,7 @@ def main(
     """Scrap http://mushpedia.com/ and http://twin.tithom.fr/mush/."""
     nb_pages_to_scrap = limit if limit else len(LINKS)
 
-    with tqdm(total=nb_pages_to_scrap, desc="Scraping pages") as pbar:
-        scraper = ScrapWikis(HttpPageReader(), progress_callback=pbar.update)
+    with tqdm(total=nb_pages_to_scrap, desc="Scraping pages") as progress_bar:
+        scraper = ScrapWikis(HttpPageReader(), progress_callback=progress_bar.update)
         pages = scraper.execute(LINKS[:nb_pages_to_scrap], format=format)
     print(json.dumps(pages, indent=4))

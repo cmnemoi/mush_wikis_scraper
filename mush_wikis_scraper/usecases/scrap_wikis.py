@@ -1,20 +1,24 @@
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import cpu_count
+from typing import Callable, Optional
+
 
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter  # type: ignore
 
 from mush_wikis_scraper.ports.page_reader import PageReader
 
+ProgressCallback = Callable[[float | None], bool | None]
 ScrapingResult = dict[str, str]
 
 
 class ScrapWikis:
-    def __init__(self, page_reader: PageReader, progress_callback: callable = None) -> None:
+    def __init__(self, page_reader: PageReader, progress_callback: Optional[ProgressCallback] = None) -> None:
         """Scraper for Mushpedia and Twinpedia.
 
         Args:
             page_reader (PageReader): The page reader to use.
+            progress_callback (Callable[[int], None], optional): A callback to call with the progress of the scrapping. Defaults to None.
             Adapters available are currently `FileSystemPageReader` and `HttpPageReader` from the `adapter` module.
         """
         self.page_reader = page_reader
@@ -47,7 +51,7 @@ class ScrapWikis:
 
     def _scrap_page(self, page_reader_link: str, format: str) -> str:
         page_parser = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
-        if self.progress_callback:
+        if self.progress_callback is not None:
             self.progress_callback(1)
         match format:
             case "html":
