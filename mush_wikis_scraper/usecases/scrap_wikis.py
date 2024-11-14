@@ -77,9 +77,14 @@ class ScrapWikis:
             return parts[-1]
 
         if source == "Twinpedia":
-            if len(parts) == 5:  # 4 slashes
-                return parts[-1].capitalize()
-            elif len(parts) == 6:  # 5 slashes
-                return f"{parts[-2].capitalize()} - {parts[-1].capitalize()}"
+            match len(parts):
+                case 5:
+                    return parts[-1].capitalize()
+                case 6:
+                    return f"{parts[-2].capitalize()} - {parts[-1].capitalize()}"
+                case 7:
+                    return f"{parts[-3].capitalize()} - {parts[-2].capitalize()} - {parts[-1].capitalize()}"
+                case _:
+                    raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
 
         raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover

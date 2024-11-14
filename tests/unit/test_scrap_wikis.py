@@ -31,6 +31,12 @@ from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
             "source": "Twinpedia",
             "content": "Si la réparation du PILGRED est complétée avant la décryogénisation de tous, il est possible de rentrer sur Sol. Aucun point de triomphe n'est perdu pour le retour sur Sol avant la désignation des Mush, puisqu'il n'y a techniquement aucun membre Mush à bord du Daedalus, à ce moment.",
         },
+        {
+            "title": "Exploration - Sections - Rencontres",
+            "link": "tests/data/twin.tithom.fr/mush/exploration/sections/rencontres",
+            "source": "Twinpedia",
+            "content": "Truc enorme qui bouffe les joueurs un par un",
+        },
     ],
 )
 def test_execute(page_data) -> None:
