@@ -1,9 +1,9 @@
 # Mush wikis scraper
 
-[![Continous Integration](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/ci.yaml/badge.svg)](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/ci.yaml) 
-[![Continous Delivery](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/publish_to_pypi.yaml/badge.svg)](https://github.com/cmnemoi/mushpedia_scraper/actions/workflows/publish_to_pypi.yaml)
-[![codecov](https://codecov.io/gh/cmnemoi/mushpedia_scraper/graph/badge.svg?token=FLAARH38AG)](https://codecov.io/gh/cmnemoi/mushpedia_scraper)
-[![PyPI version](https://badge.fury.io/py/mushpedia-scraper.svg)](https://badge.fury.io/py/mushpedia-scraper)
+[![Continous Integration](https://github.com/cmnemoi/mush_wikis_scraper/actions/workflows/ci.yaml/badge.svg)](https://github.com/cmnemoi/mush_wikis_scraper/actions/workflows/ci.yaml) 
+[![Continous Delivery](https://github.com/cmnemoi/mush_wikis_scraper/actions/workflows/publish_to_pypi.yaml/badge.svg)](https://github.com/cmnemoi/mush_wikis_scraper/actions/workflows/publish_to_pypi.yaml)
+[![codecov](https://codecov.io/gh/cmnemoi/mush_wikis_scraper/graph/badge.svg?token=FLAARH38AG)](https://codecov.io/gh/cmnemoi/mush_wikis_scraper)
+[![PyPI version](https://badge.fury.io/py/mush-wikis-scraper.svg)](https://badge.fury.io/py/mush-wikis-scraper)
 
 Scraper for http://mushpedia.com/ and http://twin.tithom.fr/mush/
 
@@ -19,7 +19,7 @@ The result will be printed to the terminal. You can redirect it to a file with `
 
 You need to have `curl` and [`uv`](https://docs.astral.sh/uv/getting-started/installation/) installed on your system.
 
-Then run the following command : `curl -sSL https://raw.githubusercontent.com/cmnemoi/mushpedia_scraper/main/clone-and-install | bash`
+Then run the following command : `curl -sSL https://raw.githubusercontent.com/cmnemoi/mush_wikis_scraper/main/clone-and-install | bash`
 
 ## Development
 
