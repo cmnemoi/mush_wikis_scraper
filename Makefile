@@ -19,6 +19,9 @@ lint:
 	uv run ruff format .
 	uv run ruff check . --fix
 
+semantic-release:
+	uv run semantic-release version --changelog --no-push --no-vcs-release --skip-build
+
 setup-git-hooks:
 	chmod +x hooks/pre-commit
 	chmod +x hooks/pre-push
@@ -26,8 +29,5 @@ setup-git-hooks:
 
 test:
 	uv run pytest -vv --cov=mush_wikis_scraper --cov-report=xml
-
-unit:
-	uv run pytest -vv tests/unit
 
 .PHONY: all check check-format check-lint check-types install lint setup-git-hooks test
