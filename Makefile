@@ -20,7 +20,7 @@ lint:
 	uv run ruff check . --fix
 
 semantic-release:
-	uv run semantic-release version --changelog --no-push --no-vcs-release --skip-build
+	uv run semantic-release version --changelog --no-push --no-vcs-release --skip-build --no-commit
 
 setup-git-hooks:
 	chmod +x hooks/pre-commit
