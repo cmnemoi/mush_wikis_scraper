@@ -5,6 +5,15 @@
 
 ### Chores
 
+- Update dependencies
+  ([`515fcb4`](https://github.com/cmnemoi/mush_wikis_scraper/commit/515fcb4c7eb7fe6f38226d46e32f82e9f5f308d9))
+
+- Update semantic-release command to include --no-commit flag in Makefile
+  ([`5934d7a`](https://github.com/cmnemoi/mush_wikis_scraper/commit/5934d7a0910bfabd068d2679fc91007d2edffc6f))
+
+- Update project metadata and add URLs for bug tracking and changelog in pyproject.toml
+  ([`3582826`](https://github.com/cmnemoi/mush_wikis_scraper/commit/3582826294bcc04e941e50920cabf236e6bcba5e))
+
 - Run semantic-release at each commit so `uv.lock` can be properly updated
   ([`f5f8bd4`](https://github.com/cmnemoi/mush_wikis_scraper/commit/f5f8bd4af2af4e9157cbfc9c10026ae565504edf))
 
@@ -50,7 +59,7 @@
 
 ### Features
 
-- Add new `source` entry for the scrapped content (Twinpedia, mush_wikis)
+- Add new `source` entry for the scrapped content (Twinpedia, Mushpedia)
   ([`b2a850b`](https://github.com/cmnemoi/mush_wikis_scraper/commit/b2a850b8c884877871f0bb34ff89d4bbe4377a0c))
 
 - Supports Twinpedia
