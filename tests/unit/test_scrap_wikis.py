@@ -37,6 +37,12 @@ from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
             "source": "Twinpedia",
             "content": "Truc enorme qui bouffe les joueurs un par un",
         },
+        {
+            "title": "[A lire] Je débute - Partie 1",
+            "link": "tests/data/cmnemoi.github.io/archive_aide_aux_bolets/a-lire-je-debute-partie-1",
+            "source": "Aide aux Bolets",
+            "content": "Cette première partie sera consacrée aux commandes du jeu et à ses mécanismes.",
+        },
     ],
 )
 def test_execute(page_data) -> None:

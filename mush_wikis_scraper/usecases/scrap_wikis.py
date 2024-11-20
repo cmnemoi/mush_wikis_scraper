@@ -1,6 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import cpu_count
-from typing import Callable, Optional
+from typing import Callable, Optional, TypedDict
 
 
 from bs4 import BeautifulSoup
@@ -9,7 +9,7 @@ from markdownify import MarkdownConverter  # type: ignore
 from mush_wikis_scraper.ports.page_reader import PageReader
 
 ProgressCallback = Callable[[float | None], bool | None]
-ScrapingResult = dict[str, str]
+ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source": str, "content": str})
 
 
 class ScrapWikis:
@@ -39,29 +39,29 @@ class ScrapWikis:
         with ThreadPoolExecutor(max_workers=nb_workers) as executor:
             results = list(executor.map(self._scrap_page, wiki_links, [format] * len(wiki_links)))
 
-        return [
-            {
-                "title": self._get_title_from_link(link),
-                "link": link,
-                "source": self._get_source_from_link(link),
-                "content": result,
-            }
-            for link, result in zip(wiki_links, results)
-        ]
+        return [result for result in results]
 
-    def _scrap_page(self, page_reader_link: str, format: str) -> str:
+    def _scrap_page(self, page_reader_link: str, format: str) -> ScrapingResult:
         page_parser = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
         if self.progress_callback is not None:
             self.progress_callback(1)
+
         match format:
             case "html":
-                return page_parser.prettify().replace("\n", "")
+                content = page_parser.prettify().replace("\n", "")
             case "text":
-                return page_parser.get_text()
+                content = page_parser.get_text()
             case "markdown":
-                return MarkdownConverter().convert_soup(page_parser)
+                content = MarkdownConverter().convert_soup(page_parser)
             case _:
                 raise ValueError(f"Unknown format: {format}")
+
+        return {
+            "title": self._get_title_from(page_reader_link, page_parser),
+            "link": page_reader_link,
+            "source": self._get_source_from_link(page_reader_link),
+            "content": content,
+        }
 
     def _get_workers(self, max_workers: int, wiki_links: list[str]) -> int:
         workers = max_workers if max_workers > 0 else 2 * cpu_count()
@@ -73,10 +73,12 @@ class ScrapWikis:
             return "Mushpedia"
         elif "twin.tithom.fr" in link:
             return "Twinpedia"
+        elif "archive_aide_aux_bolets" in link:
+            return "Aide aux Bolets"
         else:
             raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
 
-    def _get_title_from_link(self, link: str) -> str:
+    def _get_title_from(self, link: str, page_parser: BeautifulSoup) -> str:
         source = self._get_source_from_link(link)
         parts = link.split("/")
 
@@ -93,5 +95,12 @@ class ScrapWikis:
                     return f"{parts[-3].capitalize()} - {parts[-2].capitalize()} - {parts[-1].capitalize()}"
                 case _:
                     raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
+
+        if source == "Aide aux Bolets":
+            tag = page_parser.select_one("span.tid_title")
+            if tag is None:
+                raise ValueError(f"No title found for Aide aux Bolets article: {link}")  # pragma: no cover
+
+            return tag.text
 
         raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover

@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/cmnemoi/mush_wikis_scraper/graph/badge.svg?token=FLAARH38AG)](https://codecov.io/gh/cmnemoi/mush_wikis_scraper)
 [![PyPI version](https://badge.fury.io/py/mush-wikis-scraper.svg)](https://badge.fury.io/py/mush-wikis-scraper)
 
-Scraper for http://mushpedia.com/ and http://twin.tithom.fr/mush/
+Scraper for http://mushpedia.com/, http://twin.tithom.fr/mush/ and https://cmnemoi.github.io/archive_aide_aux_bolets/
 
 # Usage
 
