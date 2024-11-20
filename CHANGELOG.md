@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v0.7.0 (2024-11-20)
+
+### Chores
+
+- Run semantic-release at each commit so `uv.lock` can be properly updated
+  ([`f5f8bd4`](https://github.com/cmnemoi/mush_wikis_scraper/commit/f5f8bd4af2af4e9157cbfc9c10026ae565504edf))
+
+- Check types after each commit
+  ([`c739b92`](https://github.com/cmnemoi/mush_wikis_scraper/commit/c739b92f00f3d7910f5fbb1d989eab76d0f4ffdc))
+
+### Features
+
+- Add support for 'Aide aux Bolets'
+  ([`b53f5af`](https://github.com/cmnemoi/mush_wikis_scraper/commit/b53f5afbf192bbf116b3e778eba17a3530adec56))
+
+
 ## v0.6.0 (2024-11-14)
 
 ### Bug Fixes
@@ -34,7 +50,7 @@
 
 ### Features
 
-- Add new `source` entry for the scrapped content (Twinpedia, Mushpedia)
+- Add new `source` entry for the scrapped content (Twinpedia, mush_wikis)
   ([`b2a850b`](https://github.com/cmnemoi/mush_wikis_scraper/commit/b2a850b8c884877871f0bb34ff89d4bbe4377a0c))
 
 - Supports Twinpedia
