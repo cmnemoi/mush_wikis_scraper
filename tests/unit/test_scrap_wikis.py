@@ -43,6 +43,12 @@ from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
             "source": "Aide aux Bolets",
             "content": "Cette première partie sera consacrée aux commandes du jeu et à ses mécanismes.",
         },
+        {
+            "title": "Q&A #16 (Read the first post!)",
+            "link": "tests/data/twinoid-archives.netlify.app/en/mush/mush%20advice/57952519/1.html",
+            "source": "Mush Forums",
+            "content": "Welcome to the 16th iteration of this thread! Ask your simpler game questions here, and see them answered (usually!)",
+        },
     ],
 )
 def test_execute(page_data) -> None:

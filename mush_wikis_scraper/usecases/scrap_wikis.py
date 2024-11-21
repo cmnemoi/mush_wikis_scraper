@@ -75,6 +75,8 @@ class ScrapWikis:
             return "Twinpedia"
         elif "archive_aide_aux_bolets" in link:
             return "Aide aux Bolets"
+        elif "twinoid-archives.netlify.app" in link:
+            return "Mush Forums"
         else:
             raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
 
@@ -96,10 +98,12 @@ class ScrapWikis:
                 case _:
                     raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
 
-        if source == "Aide aux Bolets":
+        if source == "Aide aux Bolets" or source == "Mush Forums":
             tag = page_parser.select_one("span.tid_title")
             if tag is None:
-                raise ValueError(f"No title found for Aide aux Bolets article: {link}")  # pragma: no cover
+                raise ValueError(
+                    f"No title found for Aide aux Bolets article or Mush Forums thread: {link}"
+                )  # pragma: no cover
 
             return tag.text
 
