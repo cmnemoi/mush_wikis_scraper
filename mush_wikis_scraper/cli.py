@@ -21,4 +21,4 @@ def main(
     with tqdm(total=nb_pages_to_scrap, desc="Scraping pages") as progress_bar:
         scraper = ScrapWikis(HttpPageReader(), progress_callback=progress_bar.update)
         pages = scraper.execute(LINKS[:nb_pages_to_scrap], format=format)
-    print(json.dumps(pages, indent=4))
+    print(json.dumps(pages, indent=4, ensure_ascii=False))
