@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## v0.8.0 (2024-11-21)
+
+### Chores
+
+- Add a `make` entry to run scraper
+  ([`b756698`](https://github.com/cmnemoi/mush_wikis_scraper/commit/b7566984c195839cf8625aa8cf13948123b53938))
+
+### Documentation
+
+- Update README with new data source supported
+  ([`6465f34`](https://github.com/cmnemoi/mush_wikis_scraper/commit/6465f34077d25472c418cf5da46fdeeec1c06829))
+
+### Features
+
+- Add support for Mush forums help threads
+  ([`184952b`](https://github.com/cmnemoi/mush_wikis_scraper/commit/184952bde4774edb239d18f79018fe5270569c8d))
+
+
 ## v0.7.1 (2024-11-21)
 
 ### Bug Fixes
