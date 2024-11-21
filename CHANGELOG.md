@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.7.1 (2024-11-21)
+
+### Bug Fixes
+
+- Cli now outputs raw characters (especially french accents) instead of Unicode sequences
+  ([`bad55a0`](https://github.com/cmnemoi/mush_wikis_scraper/commit/bad55a04b8e01d2394e645d0b0548c5194fc2a42))
+
+### Chores
+
+- Enhance semantic-release usage
+  ([`3d2b6af`](https://github.com/cmnemoi/mush_wikis_scraper/commit/3d2b6aff83078910745a99fb5c6c2c6b44452ab1))
+
+
 ## v0.7.0 (2024-11-20)
 
 ### Chores
