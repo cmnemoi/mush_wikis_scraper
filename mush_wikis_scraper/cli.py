@@ -1,11 +1,11 @@
 import json
 
-from tqdm import tqdm
 import typer
+from tqdm import tqdm
 
 from mush_wikis_scraper.adapters import HttpPageReader
-from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
 from mush_wikis_scraper.links import LINKS
+from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
 
 cli = typer.Typer()
 

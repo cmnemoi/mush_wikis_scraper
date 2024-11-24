@@ -50,6 +50,9 @@ test = [
 [tool.ruff]
 line-length = 119
 
+[tool.ruff.lint]
+extend-select = ["I"]
+
 [tool.semantic_release]
 version_toml = ["pyproject.toml:project.version"]
 

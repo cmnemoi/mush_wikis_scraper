@@ -2,7 +2,6 @@ from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import cpu_count
 from typing import Callable, Optional, TypedDict
 
-
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter  # type: ignore
 
