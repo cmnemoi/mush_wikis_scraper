@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## v0.9.0 (2024-11-25)
+
+### Chores
+
+- Add initial module docstring and clean up import statements in scraper files
+  ([`d204287`](https://github.com/cmnemoi/mush_wikis_scraper/commit/d204287f74aa554ccb6f370de3735e19011ef4a0))
+
+### Features
+
+- Add --url option to scrape specific URLs
+  ([`60c4140`](https://github.com/cmnemoi/mush_wikis_scraper/commit/60c4140900972b2f947b692b8f5b1d8b8041a399))
+
+- Add --url option to allow scraping specific URLs from the predefined list - Extract URL validation
+  logic to private _get_links_to_scrap function - Add comprehensive e2e tests for the new option -
+  Test URL validation, error handling, and combinations with other options - Update test watch
+  command to focus on relevant tests
+
+
 ## v0.8.0 (2024-11-21)
 
 ### Chores
