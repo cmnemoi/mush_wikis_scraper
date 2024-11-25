@@ -11,7 +11,7 @@
             "splitTerminals": [
                 {
                     "name": "watch tests",
-                    "commands": ["uv run ptw . --clear --now -v"]
+                    "commands": ["uv run ptw . --clear --now -v tests/unit tests/e2e/test_cli.py::test_cli_default"]
                 },
             ]
         },
