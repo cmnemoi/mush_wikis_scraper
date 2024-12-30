@@ -7,11 +7,13 @@ from typing import Callable, TypedDict
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter  # type: ignore
 
+from mush_wikis_scraper.page_readers import PageReader
+
 ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source": str, "content": str})
 
 
 def scrap_wikis(
-    page_reader: Callable[[str], str],
+    page_reader: PageReader,
     page_links: list[str],
     format: str = "html",
     max_workers: int = -1,

@@ -1,6 +1,10 @@
 """Functions for reading page content from different sources."""
 
+from typing import Callable
+
 import httpx
+
+PageReader = Callable[[str], str]
 
 
 def read_from_filesystem(path: str) -> str:
