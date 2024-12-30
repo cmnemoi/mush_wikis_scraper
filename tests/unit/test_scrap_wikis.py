@@ -1,7 +1,7 @@
 import pytest
 
-from mush_wikis_scraper.adapters.file_system_page_reader import FileSystemPageReader
-from mush_wikis_scraper.commands.scrap_wikis import scrap_wikis
+from mush_wikis_scraper.page_readers import read_from_filesystem
+from mush_wikis_scraper.scrap_wikis import scrap_wikis
 
 
 @pytest.mark.parametrize(
@@ -56,7 +56,7 @@ def test_execute(page_data) -> None:
     page_links = [page_data["link"]]
 
     # when I run the scraper
-    pages = scrap_wikis(FileSystemPageReader(), page_links)
+    pages = scrap_wikis(read_from_filesystem, page_links)
 
     # then I should get the pages content
     page = pages[0]
@@ -76,7 +76,7 @@ def test_remove_line_breaks(format: str) -> None:
     page_links = ["tests/data/mushpedia.com/Game Basics"]
 
     # when I run the scraper
-    pages = scrap_wikis(FileSystemPageReader(), page_links, format=format)
+    pages = scrap_wikis(read_from_filesystem, page_links, format=format)
 
     # then I should get the pages content without line breaks
     assert pages[0]["content"].count("\n") == 0
@@ -87,7 +87,7 @@ def test_execute_with_html_format() -> None:
     page_links = ["tests/data/mushpedia.com/Game Basics"]
 
     # when I run the scraper
-    pages = scrap_wikis(FileSystemPageReader(), page_links, format="html")
+    pages = scrap_wikis(read_from_filesystem, page_links, format="html")
 
     # then I should get the pages content in HTML format
     assert pages[0]["content"].startswith("<!DOCTYPE html>")
@@ -98,7 +98,7 @@ def test_execute_with_text_format() -> None:
     page_links = ["tests/data/mushpedia.com/Game Basics"]
 
     # when I run the scraper
-    pages = scrap_wikis(FileSystemPageReader(), page_links, format="text")
+    pages = scrap_wikis(read_from_filesystem, page_links, format="text")
 
     # then I should get the pages content without HTML tags
     assert "<!DOCTYPE html>" not in pages[0]["content"]
@@ -109,7 +109,7 @@ def test_execute_with_markdown_format() -> None:
     page_links = ["tests/data/mushpedia.com/Game Basics"]
 
     # when I run the scraper
-    pages = scrap_wikis(FileSystemPageReader(), page_links, format="markdown")
+    pages = scrap_wikis(read_from_filesystem, page_links, format="markdown")
 
     # then I should get the pages content in Markdown format
     assert "Game Basics\n===========" in pages[0]["content"]
@@ -121,4 +121,4 @@ def test_execute_with_unknown_format() -> None:
 
     # when I run the scraper
     with pytest.raises(ValueError):
-        scrap_wikis(FileSystemPageReader(), page_links, format="unknown")
+        scrap_wikis(read_from_filesystem, page_links, format="unknown")

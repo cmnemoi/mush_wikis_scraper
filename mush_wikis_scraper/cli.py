@@ -3,9 +3,9 @@ import json
 import typer
 from tqdm import tqdm
 
-from mush_wikis_scraper.adapters import HttpPageReader
-from mush_wikis_scraper.commands.scrap_wikis import scrap_wikis
 from mush_wikis_scraper.links import LINKS
+from mush_wikis_scraper.page_readers import read_from_http
+from mush_wikis_scraper.scrap_wikis import scrap_wikis
 
 cli = typer.Typer()
 
@@ -23,7 +23,7 @@ def main(
 
     with tqdm(total=len(links_to_scrap), desc="Scraping pages") as progress_bar:
         pages = scrap_wikis(
-            HttpPageReader(),
+            read_from_http,
             links_to_scrap,
             format=format,
         )

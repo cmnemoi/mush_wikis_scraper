@@ -1,17 +1,17 @@
+"""Module for scraping wiki pages."""
+
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import cpu_count
-from typing import TypedDict
+from typing import Callable, TypedDict
 
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter  # type: ignore
-
-from mush_wikis_scraper.ports.page_reader import PageReader
 
 ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source": str, "content": str})
 
 
 def scrap_wikis(
-    page_reader: PageReader,
+    page_reader: Callable[[str], str],
     page_links: list[str],
     format: str = "html",
     max_workers: int = -1,
@@ -19,9 +19,9 @@ def scrap_wikis(
     """Scrape multiple pages in parallel and return their content.
 
     Args:
-        page_reader: The page reader to use
+        page_reader: Function that takes a path and returns the page content
         page_links: List of links to scrape
-        format: Format to return the content in ("html", "text", or "markdown")
+        format: Format of the output ("html", "text", or "markdown")
         max_workers: Maximum number of workers to use, -1 for auto
 
     Returns:
@@ -49,18 +49,18 @@ def _get_optimal_worker_count(max_workers: int, links_count: int) -> int:
     return min(workers, links_count)
 
 
-def _scrap_single_page(page_reader: PageReader, page_link: str, format: str) -> ScrapingResult:
+def _scrap_single_page(page_reader: Callable[[str], str], page_link: str, format: str) -> ScrapingResult:
     """Scrape a single page and return its content in the specified format.
 
     Args:
-        page_reader: The page reader to use
+        page_reader: Function that takes a path and returns the page content
         page_link: The link to the page to scrape
         format: The format to return the content in ("html", "text", or "markdown")
 
     Returns:
         A dictionary containing the page title, link, source and content
     """
-    page_parser = BeautifulSoup(page_reader.get(page_link), "html.parser")
+    page_parser = BeautifulSoup(page_reader(page_link), "html.parser")
 
     return {
         "title": _get_title_from(page_link, page_parser),
