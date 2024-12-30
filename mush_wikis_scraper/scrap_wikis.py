@@ -5,7 +5,7 @@ from typing import Callable, Optional, TypedDict
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter  # type: ignore
 
-from mush_wikis_scraper.ports.page_reader import PageReader
+from mush_wikis_scraper.page_reader import PageReader
 
 ProgressCallback = Callable[[float | None], bool | None]
 ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source": str, "content": str})
@@ -13,7 +13,7 @@ ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source
 
 class ScrapWikis:
     def __init__(self, page_reader: PageReader, progress_callback: Optional[ProgressCallback] = None) -> None:
-        """Scraper for Mushpedia and Twinpedia.
+        """Scraper for Mushpedia, Twinpedia, Aide aux Bolets and Mush Forums.
 
         Args:
             page_reader (PageReader): The page reader to use.

@@ -1,7 +1,7 @@
 import pytest
 
-from mush_wikis_scraper.adapters.file_system_page_reader import FileSystemPageReader
-from mush_wikis_scraper.usecases.scrap_wikis import ScrapWikis
+from mush_wikis_scraper import FileSystemPageReader
+from mush_wikis_scraper.scrap_wikis import ScrapWikis
 
 
 @pytest.mark.parametrize(
