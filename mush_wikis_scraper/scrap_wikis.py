@@ -2,6 +2,7 @@ from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import cpu_count
 from typing import Callable, Optional, TypedDict
 
+import trafilatura
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter  # type: ignore
 
@@ -52,6 +53,14 @@ class ScrapWikis:
                 content = page_parser.get_text()
             case "markdown":
                 content = MarkdownConverter().convert_soup(page_parser)
+            case "trafilatura-markdown":
+                content = trafilatura.extract(
+                    page_parser.prettify(), include_formatting=True, output_format="markdown"
+                )  # type: ignore
+            case "trafilatura-html":
+                content = trafilatura.extract(page_parser.prettify(), include_formatting=True, output_format="html")  # type: ignore
+            case "trafilatura-text":
+                content = trafilatura.extract(page_parser.prettify(), include_formatting=True, output_format="txt")  # type: ignore
             case _:
                 raise ValueError(f"Unknown format: {format}")
 

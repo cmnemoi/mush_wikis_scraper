@@ -23,6 +23,9 @@ scrap:
 	uv run mush-wikis-scrap --format text > text_data.json
 	uv run mush-wikis-scrap --format markdown > markdown_data.json
 	uv run mush-wikis-scrap --format html > html_data.json
+	uv run mush-wikis-scrap --format trafilatura-markdown > trafilatura_markdown_data.json
+	uv run mush-wikis-scrap --format trafilatura-html > trafilatura_html_data.json
+	uv run mush-wikis-scrap --format trafilatura-text > trafilatura_text_data.json
 
 semantic-release:
 	uv run semantic-release version --no-changelog --no-push --no-vcs-release --skip-build --no-commit --no-tag

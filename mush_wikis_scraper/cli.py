@@ -12,7 +12,10 @@ cli = typer.Typer()
 @cli.command()
 def main(
     limit: int = typer.Option(None, help="Number of pages to scrap. Will scrap all pages if not set."),
-    format: str = typer.Option("html", help="Format of the output. Can be `html`, `text` or `markdown`."),
+    format: str = typer.Option(
+        "trafilatura-markdown",
+        help="Format of the output. Can be `html`, `text`, `markdown`, `trafilatura-markdown`, `trafilatura-html` or `trafilatura-text`.",
+    ),
     url: list[str] = typer.Option(None, help="List of specific URLs to scrap. Must be URLs from the predefined list."),
 ) -> None:
     """Scrap Mushpedia, Twinpedia, Aide aux Bolets and Mush Forums."""

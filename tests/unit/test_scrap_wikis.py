@@ -120,6 +120,42 @@ def test_execute_with_markdown_format() -> None:
     assert "Game Basics\n===========" in pages[0]["content"]
 
 
+def test_execute_with_trafilatura_markdown_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/mushpedia.com/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapWikis(FileSystemPageReader())
+    pages = scraper.execute(page_links, format="trafilatura-markdown")
+
+    # then I should get the pages content in Markdown trafilatura format
+    assert "# Game Basics" in pages[0]["content"]
+
+
+def test_execute_with_trafilatura_html_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/mushpedia.com/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapWikis(FileSystemPageReader())
+    pages = scraper.execute(page_links, format="trafilatura-html")
+
+    # then I should get the pages content in HTML trafilatura format
+    assert "<h1>Game Basics</h1>" in pages[0]["content"]
+
+
+def test_execute_with_trafilatura_text_format() -> None:
+    # given I have page links
+    page_links = ["tests/data/mushpedia.com/Game Basics"]
+
+    # when I run the scraper
+    scraper = ScrapWikis(FileSystemPageReader())
+    pages = scraper.execute(page_links, format="trafilatura-text")
+
+    # then I should get the pages content in text trafilatura format
+    assert "Game Basics" in pages[0]["content"]
+
+
 def test_execute_with_unknown_format() -> None:
     # given I have page links
     page_links = ["tests/data/mushpedia.com/Game Basics"]
