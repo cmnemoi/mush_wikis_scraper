@@ -485,7 +485,6 @@ LINKS = [
     "http://twin.tithom.fr/mush/casting",
     "http://twin.tithom.fr/mush/stats/medicaments",
     "http://twin.tithom.fr/mush/styles",
-    "http://twin.tithom.fr/mush/guide_pourrissage",
     "http://twin.tithom.fr/mush/communications/version",
     "http://twin.tithom.fr/mush/stats/efficacite",
     "http://twin.tithom.fr/mush/tchat/registre",
