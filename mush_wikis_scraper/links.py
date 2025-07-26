@@ -602,6 +602,7 @@ LINKS = [
     "https://cmnemoi.github.io/archive_aide_aux_bolets/etre-mush-premiers-pas",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/etre-mush-tutoriel-avance",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/faire-du-roleplay",
+    "https://cmnemoi.github.io/archive_aide_aux_bolets/finola-tutoriel",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/frieda-tutoriel",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/gioele-tutoriel",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/guide-de-survie-j10",
