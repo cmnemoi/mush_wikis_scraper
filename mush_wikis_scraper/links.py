@@ -640,5 +640,4 @@ LINKS = [
     "https://twinoid-archives.netlify.app/fr/mush/entraide/60484899/1.html",
     "https://twinoid-archives.netlify.app/en/mush/mush%20advice/55145995/1.html",
     "https://twinoid-archives.netlify.app/en/mush/mush%20advice/58131968/1.html",
-    "https://cmnemoi.github.io/mush_guide/R%C3%A8glement.html",
 ]
