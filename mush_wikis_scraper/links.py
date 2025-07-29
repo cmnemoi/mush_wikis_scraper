@@ -104,7 +104,6 @@ LINKS = [
     "https://www.mushpedia.com/wiki/Eleesha_Williams",
     "https://www.mushpedia.com/wiki/Emergency_Reactor",
     "https://www.mushpedia.com/wiki/Ending_the_Game",
-    "https://www.mushpedia.com/wiki/Enfilade%27s_Way_of_the_Mush",
     "https://www.mushpedia.com/wiki/Episodes",
     "https://www.mushpedia.com/wiki/Equipment",
     "https://www.mushpedia.com/wiki/Equipment_Maintenance",
@@ -636,4 +635,10 @@ LINKS = [
     "https://cmnemoi.github.io/archive_aide_aux_bolets/titre-administrateur-neron",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/titre-commandant",
     "https://cmnemoi.github.io/archive_aide_aux_bolets/titre-responsable-comm",
+    "https://twinoid-archives.netlify.app/fr/mush/entraide/19500694/1.html",
+    "https://twinoid-archives.netlify.app/fr/mush/entraide/22123559/1.html",
+    "https://twinoid-archives.netlify.app/fr/mush/entraide/60484899/1.html",
+    "https://twinoid-archives.netlify.app/en/mush/mush%20advice/55145995/1.html",
+    "https://twinoid-archives.netlify.app/en/mush/mush%20advice/58131968/1.html",
+    "https://cmnemoi.github.io/mush_guide/R%C3%A8glement.html",
 ]

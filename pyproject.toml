@@ -1,6 +1,6 @@
 [project]
 name = "mush-wikis-scraper"
-version = "1.0.2"
+version = "1.1.0"
 description = "Scraper for http://mushpedia.com/, http://twin.tithom.fr/mush/, https://cmnemoi.github.io/archive_aide_aux_bolets/ and QA Mush forum threads."
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
