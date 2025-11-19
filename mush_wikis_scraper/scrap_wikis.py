@@ -77,10 +77,8 @@ class ScrapWikis:
         return min(workers, len(wiki_links))
 
     def _get_source_from_link(self, link: str) -> str:
-        if "mushpedia" in link:
-            return "Mushpedia"
-        elif "twin.tithom.fr" in link:
-            return "Twinpedia"
+        if "emushpedia" in link:
+            return "eMushpedia"
         elif "archive_aide_aux_bolets" in link:
             return "Aide aux Bolets"
         elif "twinoid-archives.netlify.app" in link:
@@ -92,21 +90,10 @@ class ScrapWikis:
         source = self._get_source_from_link(link)
         parts = link.split("/")
 
-        if source == "Mushpedia":
-            return parts[-1]
+        if source == "eMushpedia":
+            return parts[-1].replace("-", " ").capitalize()
 
-        if source == "Twinpedia":
-            match len(parts):
-                case 5:
-                    return parts[-1].capitalize()
-                case 6:
-                    return f"{parts[-2].capitalize()} - {parts[-1].capitalize()}"
-                case 7:
-                    return f"{parts[-3].capitalize()} - {parts[-2].capitalize()} - {parts[-1].capitalize()}"
-                case _:
-                    raise ValueError(f"Unknown source for link: {link}")  # pragma: no cover
-
-        if source == "Aide aux Bolets" or source == "Mush Forums":
+        if source in ("Aide aux Bolets", "Mush Forums"):
             tag = page_parser.select_one("span.tid_title")
             if tag is None:
                 raise ValueError(

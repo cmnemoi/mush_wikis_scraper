@@ -9,10 +9,7 @@ runner = CliRunner()
 def test_cli_default():
     result = runner.invoke(cli, ["--limit", "2", "--format", "markdown"])
     assert result.exit_code == 0
-    assert (
-        "Happens automatically when taking **any** other action, or clicking on anywhere in the room other than inventory (clicking on people makes you stand up too)"
-        in result.stdout
-    )
+    assert "Abnégation — eMushpedia" in result.stdout
     assert "Actions\\n=======" in result.stdout
 
 
@@ -55,4 +52,4 @@ def test_cli_urls_with_format():
     # Test combining --url with --format
     result = runner.invoke(cli, ["--url", LINKS[0], "--format", "markdown"])
     assert result.exit_code == 0
-    assert "Actions\\n=======" in result.stdout
+    assert "Abnégation — eMushpedia" in result.stdout

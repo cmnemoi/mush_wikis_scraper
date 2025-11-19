@@ -8,34 +8,10 @@ from mush_wikis_scraper.scrap_wikis import ScrapWikis
     "page_data",
     [
         {
-            "title": "Game Basics",
-            "link": "tests/data/mushpedia.com/Game Basics",
-            "source": "Mushpedia",
-            "content": "There are two teams of players on the ship. Humans who are trying to save Humanity",
-        },
-        {
-            "title": "Human Play",
-            "link": "tests/data/mushpedia.com/Human Play",
-            "source": "Mushpedia",
-            "content": "Figure out what your character's role is and do it.",
-        },
-        {
-            "title": "Personnages - Pnj",
-            "link": "tests/data/twin.tithom.fr/mush/personnages/pnj",
-            "source": "Twinpedia",
-            "content": "NERON est l'intelligence artifcielle de bord, sa puissance de calcul est indispensable à l'opération du PILGRED.",
-        },
-        {
-            "title": "Pilgred",
-            "link": "tests/data/twin.tithom.fr/mush/pilgred",
-            "source": "Twinpedia",
-            "content": "Si la réparation du PILGRED est complétée avant la décryogénisation de tous, il est possible de rentrer sur Sol. Aucun point de triomphe n'est perdu pour le retour sur Sol avant la désignation des Mush, puisqu'il n'y a techniquement aucun membre Mush à bord du Daedalus, à ce moment.",
-        },
-        {
-            "title": "Exploration - Sections - Rencontres",
-            "link": "tests/data/twin.tithom.fr/mush/exploration/sections/rencontres",
-            "source": "Twinpedia",
-            "content": "Truc enorme qui bouffe les joueurs un par un",
+            "title": "Introduction au jeu",
+            "link": "tests/data/emushpedia.miraheze.org/introduction-au-jeu",
+            "source": "eMushpedia",
+            "content": "eMush est un jeu via navigateur issu de Mush, initialement développé par Motion Twin, puis repris par la communauté pour continuer à le faire vivre malgré la fermeture définitive de Flash Player.",
         },
         {
             "title": "[A lire] Je débute - Partie 1",
@@ -74,7 +50,7 @@ def test_execute(page_data) -> None:
 )
 def test_remove_line_breaks(format: str) -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
@@ -86,7 +62,7 @@ def test_remove_line_breaks(format: str) -> None:
 
 def test_execute_with_html_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
@@ -98,7 +74,7 @@ def test_execute_with_html_format() -> None:
 
 def test_execute_with_text_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
@@ -110,55 +86,55 @@ def test_execute_with_text_format() -> None:
 
 def test_execute_with_markdown_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="markdown")
 
     # then I should get the pages content in Markdown format
-    assert "Game Basics\n===========" in pages[0]["content"]
+    assert "Introduction au jeu\n===================" in pages[0]["content"]
 
 
 def test_execute_with_trafilatura_markdown_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="trafilatura-markdown")
 
     # then I should get the pages content in Markdown trafilatura format
-    assert "# Game Basics" in pages[0]["content"]
+    assert "# Introduction au jeu" in pages[0]["content"]
 
 
 def test_execute_with_trafilatura_html_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="trafilatura-html")
 
     # then I should get the pages content in HTML trafilatura format
-    assert "<h1>Game Basics</h1>" in pages[0]["content"]
+    assert "<h1>Introduction au jeu</h1>" in pages[0]["content"]
 
 
 def test_execute_with_trafilatura_text_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
     pages = scraper.execute(page_links, format="trafilatura-text")
 
     # then I should get the pages content in text trafilatura format
-    assert "Game Basics" in pages[0]["content"]
+    assert "# Introduction au jeu\n\n###\nQu'est-ce que\n*\neMush\n" in pages[0]["content"]
 
 
 def test_execute_with_unknown_format() -> None:
     # given I have page links
-    page_links = ["tests/data/mushpedia.com/Game Basics"]
+    page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="client-nojs skin-theme-clientpref-day" lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Introduction au jeu — eMushpedia</title>
+<script>document.documentElement.className="client-js skin-theme-clientpref-day";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],"wgRequestId":"ead4bf0e3a02fed59f63a9d6","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Introduction_au_jeu","wgTitle":"Introduction au jeu","wgCurRevisionId":3331,"wgRevisionId":3331,"wgArticleId":799,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Evian","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":[],"wgPageViewLanguage":"fr","wgPageContentLanguage":"fr","wgPageContentModel":"wikitext","wgRelevantPageName":"Introduction_au_jeu","wgRelevantArticleId":799,"wgUserId":9,"wgUserIsTemp":false,"wgUserEditCount":185,"wgUserRegistration":1740650709000,"wgUserFirstRegistration":1740650709000,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"all","wgNoticeUserData":{"registration":"20250227100509"},"wgCiteReferencePreviewsActive":true,"wgVisualEditor":{"pageLanguageCode":"fr","pageLanguageDir":"ltr","pageVariantFallbacks":"fr"},"wgULSAcceptLanguageList":["en-us","en"],"wgGlobalGroups":[],"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgIsMobile":false,"wgEditSubmitButtonLabelPublish":false,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":true,"wgVector2022LanguageInHeader":false,"wgULSisLanguageSelectorEmpty":false,"wgEchoSeenTime":{"alert":"1970-01-01T00:00:01Z","message":"2025-11-15T14:55:11Z"}};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","ext.echo.styles.badge":"ready","oojs-ui.styles.icons-alerts":"ready","ext.MobileDetect.nomobile":"ready","ext.DarkMode.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","mediawiki.page.watch.ajax","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.checkUser.clientHints","ext.echo.init","ext.eventLogging","ext.DarkMode","ext.urlShortener.toolbar","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.uls.compactlinks","ext.uls.interface","ext.centralauth.centralautologin.clearcookie","ext.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"2d1cf15f675b1fe5eb0c10c5814fdeab691e4eb7+\\","watchToken":"3e74b06c7f315f1f8829f476e708c494691e4eb7+\\","csrfToken":"10c6e529081debcd68d796f48e77f227691e4eb7+\\"});mw.user.options.set({"cookiewarning_dismissed":"1","darkmode":0,"echo-notifications-page-linked-title-muted-list":"762\n754\n752\n748\n760","rcfilters-limit":"50","rcfilters-rc-collapsed":0,"rcfilters-saved-queries":"{\"queries\":{},\"version\":\"2\"}","rcfilters-wl-collapsed":0,"rcfilters-wl-saved-queries":"{\"queries\":{},\"version\":\"2\"}","visualeditor-hidebetawelcome":"1","visualeditor-hideusered":"1","echo-subscriptions-email-edit-user-talk":1,"echo-subscriptions-web-reverted":false,"echo-subscriptions-email-article-linked":true,"echo-subscriptions-web-article-linked":true,"echo-subscriptions-email-mention":true});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=fr&amp;modules=ext.DarkMode.styles%7Cext.MobileDetect.nomobile%7Cext.echo.styles.badge%7Cext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Coojs-ui.styles.icons-alerts%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?lang=fr&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=fr&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.44.2">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="twitter:site" content="">
+<meta name="twitter:card" content="summary">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Introduction au jeu — eMushpedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//static.wikitide.net">
+<link rel="alternate" type="application/x-wiki" title="Modifier" href="/wiki/Introduction_au_jeu?action=edit">
+<link rel="icon" href="https://static.wikitide.net/emushpediawiki/e/e1/Neron-small.png">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="eMushpedia (fr)">
+<link rel="EditURI" type="application/rsd+xml" href="https://emushpedia.miraheze.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://emushpedia.miraheze.org/wiki/Introduction_au_jeu">
+<link rel="alternate" type="application/atom+xml" title="Flux Atom de eMushpedia" href="/wiki/Sp%C3%A9cial:Modifications_r%C3%A9centes?feed=atom">
+<link rel="dns-prefetch" href="https://meta.miraheze.org" />
+<meta property="og:title" content="Introduction au jeu">
+<meta property="og:site_name" content="eMushpedia">
+<meta property="og:url" content="https://emushpedia.miraheze.org/wiki/Introduction_au_jeu">
+<meta property="og:image" content="https://static.wikitide.net/emushpediawiki/9/9f/Neron-big.png">
+<meta property="article:modified_time" content="2025-11-05T15:55:35Z">
+<meta property="article:published_time" content="2025-11-05T15:55:35Z">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Introduction au jeu \u2014 eMushpedia","headline":"Introduction au jeu \u2014 eMushpedia","mainEntityOfPage":"Introduction au jeu","identifier":"https:\/\/emushpedia.miraheze.org\/wiki\/Introduction_au_jeu","url":"https:\/\/emushpedia.miraheze.org\/wiki\/Introduction_au_jeu","dateModified":"2025-11-05T15:55:35Z","datePublished":"2025-11-05T15:55:35Z","image":{"@type":"ImageObject","url":"https:\/\/static.wikitide.net\/emushpediawiki\/9\/9f\/Neron-big.png"},"author":{"@type":"Organization","name":"eMushpedia","url":"https:\/\/emushpedia.miraheze.org","logo":{"@type":"ImageObject","url":"https:\/\/static.wikitide.net\/emushpediawiki\/9\/9f\/Neron-big.png","caption":"eMushpedia"}},"publisher":{"@type":"Organization","name":"eMushpedia","url":"https:\/\/emushpedia.miraheze.org","logo":{"@type":"ImageObject","url":"https:\/\/static.wikitide.net\/emushpediawiki\/9\/9f\/Neron-big.png","caption":"eMushpedia"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/emushpedia.miraheze.org\/wiki\/Sp%C3%A9cial:Search?search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Introduction_au_jeu rootpage-Introduction_au_jeu skin-vector action-view"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Introduction au jeu</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">De eMushpedia</div>
+		<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Aller à la navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Aller à la recherche</a>
+		<div id="mw-content-text" class="mw-body-content"><div class="mw-pt-translate-header noprint nomobile" dir="ltr" lang="fr"><a href="/wiki/Sp%C3%A9cial:Traduire?group=page-Introduction+au+jeu&amp;action=page&amp;filter=&amp;action_source=translate_page" title="Spécial:Traduire">Traduire cette page</a></div><div class="mw-content-ltr mw-parser-output" lang="fr" dir="ltr"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="fr" dir="ltr"><h2 id="mw-toc-heading">Sommaire</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Qu&#39;est-ce_que_eMush?"><span class="tocnumber">1</span> <span class="toctext">Qu'est-ce que <i>eMush</i>?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Contexte_et_univers"><span class="tocnumber">2</span> <span class="toctext">Contexte et univers</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Principe_du_jeu"><span class="tocnumber">3</span> <span class="toctext">Principe du jeu</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Gameplay_et_mécaniques"><span class="tocnumber">4</span> <span class="toctext">Gameplay et mécaniques</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#But_du_jeu"><span class="tocnumber">5</span> <span class="toctext">But du jeu</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Stratégies_et_principes_incontournables"><span class="tocnumber">6</span> <span class="toctext">Stratégies et principes incontournables</span></a></li>
+</ul>
+</div>
+
+<div class="mw-heading mw-heading3"><h3 id="Qu'est-ce_que_eMush?"><span id="Qu.27est-ce_que_eMush.3F"></span>Qu'est-ce que <i>eMush</i>?</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/Introduction_au_jeu?veaction=edit&amp;section=1" title="Modifier la section : Qu&#39;est-ce que eMush?" class="mw-editsection-visualeditor"><span>modifier</span></a><span class="mw-editsection-divider"> | </span><a href="/wiki/Introduction_au_jeu?action=edit&amp;section=1" title="Modifier le code source de la section : Qu&#39;est-ce que eMush?"><span>modifier le wikicode</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>eMush est un jeu via navigateur issu de Mush, initialement développé par Motion Twin, puis repris par la communauté pour continuer à le faire vivre malgré la fermeture définitive de Flash Player.
+</p><p>Le jeu se déroule dans un univers de science-fiction, où un équipage de <b>16 personnes</b> devra survivre à bord d'un vaisseau nommé le <b><a href="/wiki/Histoire_des_%C3%A9l%C3%A9ments_de_jeu" title="Histoire des éléments de jeu">Daedalus</a></b>. Cependant, 2 membres d'équipage sont en réalité infectés par un parasite alien (<b>le <a href="/wiki/Histoire_des_%C3%A9l%C3%A9ments_de_jeu" title="Histoire des éléments de jeu">Mush</a></b>) et devront tout faire pour nuire à l'humanité.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Contexte_et_univers">Contexte et univers</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/Introduction_au_jeu?veaction=edit&amp;section=2" title="Modifier la section : Contexte et univers" class="mw-editsection-visualeditor"><span>modifier</span></a><span class="mw-editsection-divider"> | </span><a href="/wiki/Introduction_au_jeu?action=edit&amp;section=2" title="Modifier le code source de la section : Contexte et univers"><span>modifier le wikicode</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li>L'humanité est en guerre contre une entité alien nommée le <span style="white-space:nowrap; font-weight: bold;"><span class="mw-default-size icon-margin" typeof="mw:File"><a href="/wiki/Mush" title="Icon"><img alt="Icon" src="//static.wikitide.net/emushpediawiki/0/07/Statut-mute.png" decoding="async" width="16" height="16" class="mw-file-element" /></a></span> <a href="/wiki/Mush" title="Mush">Mush</a></span>, un organisme capable de posséder et de contrôler les humains.</li>
+<li>Le Daedalus a pour mission de sauver l'humanité en échappant au Mush tout en élaborant un remède contre ce dernier.</li>
+<li>Le jeu se déroule dans un univers de science-fiction dystopique où les secrets et la paranoïa sont monnaie courante.</li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Principe_du_jeu">Principe du jeu</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/Introduction_au_jeu?veaction=edit&amp;section=3" title="Modifier la section : Principe du jeu" class="mw-editsection-visualeditor"><span>modifier</span></a><span class="mw-editsection-divider"> | </span><a href="/wiki/Introduction_au_jeu?action=edit&amp;section=3" title="Modifier le code source de la section : Principe du jeu"><span>modifier le wikicode</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li>Chaque joueur incarne l'un des 16 membres d'équipage du vaisseau, chacun possédant un rôle et des compétences qui lui sont propres.</li>
+<li>Les humains devront coopérer afin de mener toutes les tâches nécessaires à leur survie, et créer un remède contre le Mush tout en essayant de démasquer les infectés qui se cachent parmi eux.</li>
+<li>Deux joueurs sont <b>secrètement</b> des Mush et devront continuer à se faire passer pour humains tout en sabotant le vaisseau, infectant les autres survivants ou tuant tout l'équipage.</li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Gameplay_et_mécaniques"><span id="Gameplay_et_m.C3.A9caniques"></span>Gameplay et mécaniques</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/Introduction_au_jeu?veaction=edit&amp;section=4" title="Modifier la section : Gameplay et mécaniques" class="mw-editsection-visualeditor"><span>modifier</span></a><span class="mw-editsection-divider"> | </span><a href="/wiki/Introduction_au_jeu?action=edit&amp;section=4" title="Modifier le code source de la section : Gameplay et mécaniques"><span>modifier le wikicode</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><i>eMush</i> est un jeu principalement axé autour du jeu de rôle, où vos actions seront limitées par le nombre de <a href="/wiki/Points_d%27Action" class="mw-redirect" title="Points d&#39;Action">Points d'Action</a> <span style="white-space:nowrap"><span class="mw-default-size icon-margin" typeof="mw:File"><a href="https://emushpedia.miraheze.org/wiki/Points_d%27Action_et_de_Mouvement#Points_d&#39;Action" title="Point d&#39;Action" rel="nofollow"><img alt="Point d&#39;Action" src="//static.wikitide.net/emushpediawiki/4/47/Ressource-pa.png" decoding="async" width="11" height="13" class="mw-file-element" /></a></span></span> (ou PA) et de <a href="/wiki/Points_d%27Action" class="mw-redirect" title="Points d&#39;Action">Points de Mouvement</a> <span style="white-space:nowrap"><span class="mw-default-size icon-margin" typeof="mw:File"><a href="https://emushpedia.miraheze.org/wiki/Points_d%27Action_et_de_Mouvement#Points_de_Mouvement" title="Point de Mouvement" rel="nofollow"><img alt="Point de Mouvement" src="//static.wikitide.net/emushpediawiki/9/91/Ressource-pm.png" decoding="async" width="11" height="13" class="mw-file-element" /></a></span></span> (PM) de votre personnage.
+</p>
+<ul><li>Chaque action vous coûtera un certain nombre de <span style="white-space:nowrap"><span class="mw-default-size icon-margin" typeof="mw:File"><a href="https://emushpedia.miraheze.org/wiki/Points_d%27Action_et_de_Mouvement#Points_d&#39;Action" title="Point d&#39;Action" rel="nofollow"><img alt="Point d&#39;Action" src="//static.wikitide.net/emushpediawiki/4/47/Ressource-pa.png" decoding="async" width="11" height="13" class="mw-file-element" /></a></span></span>, qui se rechargent avec le temps.</li>
+<li>Déplacer votre personnage d'une pièce à l'autre du vaisseau utilisera des <span style="white-space:nowrap"><span class="mw-default-size icon-margin" typeof="mw:File"><a href="https://emushpedia.miraheze.org/wiki/Points_d%27Action_et_de_Mouvement#Points_de_Mouvement" title="Point de Mouvement" rel="nofollow"><img alt="Point de Mouvement" src="//static.wikitide.net/emushpediawiki/9/91/Ressource-pm.png" decoding="async" width="11" height="13" class="mw-file-element" /></a></span></span> qui se rechargeront de la même manière (mais pas forcément au même rythme!).</li></ul>
+<p>Dans <i>eMush</i>, chaque journée est découpée en 8 Cycles de 3 heures. 
+</p>
+<ul><li>Chaque début de cycle apporte des évènements pouvant être fixes ou aléatoires (voir <a href="/wiki/Emb%C3%BBches" title="Embûches">Embûches</a>), et régénère une partie des <a href="/wiki/Ressources_personnelles?action=edit&amp;redlink=1" class="new" title="Ressources personnelles (page inexistante)">ressources personnelles</a> des joueurs.</li>
+<li>Tous les évènements se produisant en dehors du début de Cycle sont donc provoqués par l'action d'un joueur (exceptés certaines conséquences à retardement de <a href="/wiki/Comp%C3%A9tences_Mush" title="Compétences Mush">Compétences Mush</a>).</li></ul>
+<p>Une grande partie du jeu repose sur la <b>communication</b> et l'observation des actions des autres joueurs. Vous pourrez échanger via un canal de discussion partagé par tous les joueurs, ou dans des canaux privés, en sélectionnant les personnes avec qui vous souhaitez échanger. En fonction de votre rôle au sein du vaisseau, vous pourrez ainsi enquêter sur les Mush, réaliser des recherches, réparer le vaisseau, mener des expéditions, etc...
+</p>
+<div class="mw-heading mw-heading3"><h3 id="But_du_jeu">But du jeu</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/Introduction_au_jeu?veaction=edit&amp;section=5" title="Modifier la section : But du jeu" class="mw-editsection-visualeditor"><span>modifier</span></a><span class="mw-editsection-divider"> | </span><a href="/wiki/Introduction_au_jeu?action=edit&amp;section=5" title="Modifier le code source de la section : But du jeu"><span>modifier le wikicode</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li>Si vous êtes humain, deux options de victoire s'offrent à vous: rentrer sur <a href="/wiki/Histoire_des_%C3%A9l%C3%A9ments_de_jeu" title="Histoire des éléments de jeu">Sol</a>, ou atteindre <a href="/wiki/Histoire_des_%C3%A9l%C3%A9ments_de_jeu" title="Histoire des éléments de jeu">Eden</a>, le tout <i><b>sans Mush à bord</b></i>.</li>
+<li>Si vous êtes mush, votre but est de détruire l'équipage du Daedalus par tous les moyens. Parfois, votre sacrifice sera nécessaire pour y parvenir. Eradiquer l'humanité est bien plus important que votre propre survie&#160;!</li></ul>
+<p>En fonction des talents de survie de l'équipage, vous aurez donc le choix (ou pas) de choisir collectivement l'une des fins possibles du jeu (voir <a href="/wiki/Fins_du_jeu" title="Fins du jeu">Fins du jeu</a>):
+</p>
+<ul><li><i>Le Daedalus a été détruit…</i> équivalent à une défaite du camp humain.</li>
+<li><i>Le Daedalus est rentré sur Sol…</i> <i><b>SANS</b></i> le <span style="white-space:nowrap; font-weight: bold;"><span class="icon-margin" typeof="mw:File"><a href="/wiki/S%C3%A9rum_r%C3%A9tro-fongique" title="Sérum rétro-fongique"><img alt="Sérum rétro-fongique" src="//static.wikitide.net/emushpediawiki/thumb/5/52/Objet-serum-retro-fongique.jpg/16px-Objet-serum-retro-fongique.jpg" decoding="async" width="16" height="16" class="mw-file-element" srcset="//static.wikitide.net/emushpediawiki/thumb/5/52/Objet-serum-retro-fongique.jpg/24px-Objet-serum-retro-fongique.jpg 1.5x, //static.wikitide.net/emushpediawiki/thumb/5/52/Objet-serum-retro-fongique.jpg/32px-Objet-serum-retro-fongique.jpg 2x" /></a></span> <a href="/wiki/S%C3%A9rum_r%C3%A9tro-fongique" title="Sérum rétro-fongique">Sérum rétro-fongique</a></span> équivalent à une réussite du camp humain (si l'équipage la considère comme telle) <i>SAUF s'il vous reste des mushs à bord</i></li>
+<li><i>Le Daedalus est rentré sur Sol…</i> <i><b>AVEC</b></i> le <span style="white-space:nowrap; font-weight: bold;"><span class="icon-margin" typeof="mw:File"><a href="/wiki/S%C3%A9rum_r%C3%A9tro-fongique" title="Sérum rétro-fongique"><img alt="Sérum rétro-fongique" src="//static.wikitide.net/emushpediawiki/thumb/5/52/Objet-serum-retro-fongique.jpg/16px-Objet-serum-retro-fongique.jpg" decoding="async" width="16" height="16" class="mw-file-element" srcset="//static.wikitide.net/emushpediawiki/thumb/5/52/Objet-serum-retro-fongique.jpg/24px-Objet-serum-retro-fongique.jpg 1.5x, //static.wikitide.net/emushpediawiki/thumb/5/52/Objet-serum-retro-fongique.jpg/32px-Objet-serum-retro-fongique.jpg 2x" /></a></span> <a href="/wiki/S%C3%A9rum_r%C3%A9tro-fongique" title="Sérum rétro-fongique">Sérum rétro-fongique</a></span> équivalent à une réussite du camp humain <i>SAUF s'il vous reste des mushs à bord</i></li>
+<li><i>Le Daedalus est parti vers Eden…</i> équivalent à une réussite exceptionnelle du camp humain <i>SAUF s'il vous reste des mushs à bord</i></li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Stratégies_et_principes_incontournables"><span id="Strat.C3.A9gies_et_principes_incontournables"></span>Stratégies et principes incontournables</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/wiki/Introduction_au_jeu?veaction=edit&amp;section=6" title="Modifier la section : Stratégies et principes incontournables" class="mw-editsection-visualeditor"><span>modifier</span></a><span class="mw-editsection-divider"> | </span><a href="/wiki/Introduction_au_jeu?action=edit&amp;section=6" title="Modifier le code source de la section : Stratégies et principes incontournables"><span>modifier le wikicode</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Certains principes de jeu forment la base de <i>eMush</i>. Les connaître est indispensable pour jouer efficacement et ne pas être accusé d'être un Mush durant votre première découverte du jeu.
+</p>
+<ul><li><a href="/wiki/Les_relais" title="Les relais">Les relais</a></li>
+<li>L'<a href="/wiki/Inventaire_du_vaisseau" title="Inventaire du vaisseau">Inventaire du vaisseau</a></li>
+<li><span style="white-space:nowrap; font-weight: bold;"><span class="icon-margin" typeof="mw:File"><a href="/wiki/Traqueur#LA_Liste" title="LA Liste"><img alt="LA Liste" src="//static.wikitide.net/emushpediawiki/thumb/5/51/Objet-document.jpg/16px-Objet-document.jpg" decoding="async" width="16" height="16" class="mw-file-element" srcset="//static.wikitide.net/emushpediawiki/thumb/5/51/Objet-document.jpg/24px-Objet-document.jpg 1.5x, //static.wikitide.net/emushpediawiki/thumb/5/51/Objet-document.jpg/32px-Objet-document.jpg 2x" /></a></span> <a href="/wiki/Traqueur#LA_Liste" title="Traqueur">LA Liste</a></span> d'<span style="white-space:nowrap; font-weight: bold;"><span class="mw-default-size icon-margin" typeof="mw:File"><a href="/wiki/Eleesha_Williams" title="Icon"><img alt="Icon" src="//static.wikitide.net/emushpediawiki/3/3e/Character-icon-eleesha.png" decoding="async" width="16" height="16" class="mw-file-element" /></a></span> <a href="/wiki/Eleesha_Williams" title="Eleesha Williams">Eleesha</a></span></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw182
+Cached time: 20251109184123
+Cache expiry: 1296000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.063 seconds
+Real time usage: 0.113 seconds
+Preprocessor visited node count: 617/1000000
+Post‐expand include size: 2434/2097152 bytes
+Template argument size: 66/2097152 bytes
+Highest expansion depth: 5/100
+Expensive parser function count: 0/99
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   26.157      1 -total
+ 35.18%    9.201      3 Modèle:Objet
+ 24.50%    6.408      2 Modèle:Personnage
+ 22.21%    5.809      2 Modèle:PA
+ 13.12%    3.433      2 Modèle:PM
+-->
+
+<!-- Saved in parser cache with key emushpediawiki:pcache:799:|#|:idhash:canonical and timestamp 20251109184123 and revision id 3331. Rendering was triggered because: page-view
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Récupérée de "<a dir="ltr" href="https://emushpedia.miraheze.org/wiki/Introduction_au_jeu?oldid=3331">https://emushpedia.miraheze.org/wiki/Introduction_au_jeu?oldid=3331</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Menu de navigation</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Outils personnels</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-uls" class="mw-list-item active"><a class="uls-trigger" href="#"><span>français</span></a></li><li id="pt-userpage" class="mw-list-item"><a class="new" href="/wiki/Utilisateur:Evian" title="Votre page d’utilisateur (page inexistante) [.]" accesskey="."><span>Evian</span></a></li><li id="pt-notifications-alert" class="mw-list-item"><a class="mw-echo-notifications-badge mw-echo-notification-badge-nojs oo-ui-icon-bell mw-echo-notifications-badge-all-read" href="/wiki/Sp%C3%A9cial:Notifications" data-event-name="ui.notifications" data-counter-num="0" data-counter-text="0" title="Vos alertes"><span>Alerte (0)</span></a></li><li id="pt-notifications-notice" class="mw-list-item"><a class="mw-echo-notifications-badge mw-echo-notification-badge-nojs oo-ui-icon-tray mw-echo-notifications-badge-all-read" href="/wiki/Sp%C3%A9cial:Notifications" data-counter-num="0" data-counter-text="0" title="Vos notifications"><span>Notification (0)</span></a></li><li id="pt-mytalk" class="mw-list-item"><a href="/wiki/Discussion_utilisateur:Evian" class="new" title="Votre page de discussion (page inexistante) [n]" accesskey="n"><span>Discussion</span></a></li><li id="pt-darkmode" class="mw-list-item"><a href="#" class="ext-darkmode-link"><span>Mode sombre</span></a></li><li id="pt-preferences" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Pr%C3%A9f%C3%A9rences" title="Vos préférences"><span>Préférences</span></a></li><li id="pt-betafeatures" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Pr%C3%A9f%C3%A9rences#mw-prefsection-betafeatures" title="Fonctionnalités bêta"><span>Bêta</span></a></li><li id="pt-watchlist" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Liste_de_suivi" title="Une liste des pages dont vous suivez les modifications [l]" accesskey="l"><span>Liste de suivi</span></a></li><li id="pt-mycontris" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Contributions/Evian" title="La liste de vos contributions [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-logout" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:D%C3%A9connexion?returnto=Introduction+au+jeu" data-mw="interface" title="Se déconnecter"><span>Se déconnecter</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-namespaces-label"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Espaces de noms</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Introduction_au_jeu" title="Voir le contenu de la page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="/wiki/Discussion:Introduction_au_jeu?action=edit&amp;redlink=1" rel="discussion" class="new" title="Discussion au sujet de cette page de contenu (page inexistante) [t]" accesskey="t"><span>Discussion</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown vector-menu" aria-labelledby="p-variants-label"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	>
+	<label
+		id="p-variants-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">français</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-views-label"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Affichages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected mw-list-item"><a href="/wiki/Introduction_au_jeu"><span>Lire</span></a></li><li id="ca-ve-edit" class="mw-list-item"><a href="/wiki/Introduction_au_jeu?veaction=edit" title="Modifier cette page [v]" accesskey="v"><span>Modifier</span></a></li><li id="ca-edit" class="collapsible mw-list-item"><a href="/wiki/Introduction_au_jeu?action=edit" title="Modifier le wikicode de cette page [e]" accesskey="e"><span>Modifier le wikicode</span></a></li><li id="ca-history" class="mw-list-item"><a href="/wiki/Introduction_au_jeu?action=history" title="Historique des versions de cette page [h]" accesskey="h"><span>Voir l’historique</span></a></li><li id="ca-watch" class="mw-watchlink icon mw-list-item"><a href="/wiki/Introduction_au_jeu?action=watch" data-mw="interface" title="Ajouter cette page à votre liste de suivi [w]" accesskey="w"><span>Suivre</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions vector-menu-dropdown vector-menu" aria-labelledby="p-cactions-label"  title="Plus d’options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Plus</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-move" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Renommer_une_page/Introduction_au_jeu" title="Renommer cette page [m]" accesskey="m"><span>Renommer</span></a></li><li id="ca-purge" class="mw-list-item"><a href="/wiki/Introduction_au_jeu?action=purge"><span>Purger</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<h3 >Rechercher</h3>
+	<form action="/w/index.php" id="searchform" class="vector-search-box-form">
+		<div id="simpleSearch"
+			class="vector-search-box-inner"
+			 data-search-loc="header-navigation">
+			<input class="vector-search-box-input"
+				 type="search" name="search" placeholder="Rechercher sur eMushpedia" aria-label="Rechercher sur eMushpedia" autocapitalize="sentences" spellcheck="false" title="Rechercher sur eMushpedia [f]" accesskey="f" id="searchInput"
+			>
+			<input type="hidden" name="title" value="Spécial:Recherche">
+			<input id="mw-searchButton"
+				 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Rechercher les pages comportant ce texte." value="Rechercher">
+			<input id="searchButton"
+				 class="searchButton" type="submit" name="go" title="Accédez à une page du même nom si elle existe" value="Lire">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel" class="vector-legacy-sidebar">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Accueil"
+			title="Visiter la page d’accueil"></a>
+	</div>
+	
+<nav id="p-Navigation_Éditeur" class="mw-portlet mw-portlet-Navigation_Éditeur vector-menu-portal portal vector-menu" aria-labelledby="p-Navigation_Éditeur-label"  >
+	<h3
+		id="p-Navigation_Éditeur-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation Éditeur</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-Catégories-de-pages" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Cat%C3%A9gories"><span>Catégories de pages</span></a></li><li id="n-Pages-récemment-modifiées" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Modifications_r%C3%A9centes"><span>Pages récemment modifiées</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu-portal portal vector-menu" aria-labelledby="p-tb-label"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Outils</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Pages_li%C3%A9es/Introduction_au_jeu" title="Liste des pages liées qui pointent sur celle-ci [j]" accesskey="j"><span>Pages liées</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Suivi_des_liens/Introduction_au_jeu" rel="nofollow" title="Liste des modifications récentes des pages appelées par celle-ci [k]" accesskey="k"><span>Suivi des pages liées</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:T%C3%A9l%C3%A9verser" title="Téléverser des fichiers [u]" accesskey="u"><span>Téléverser un fichier</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Version imprimable de cette page [p]" accesskey="p"><span>Version imprimable</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/wiki/Introduction_au_jeu?oldid=3331" title="Adresse permanente de cette version de cette page"><span>Lien permanent</span></a></li><li id="t-info" class="mw-list-item"><a href="/wiki/Introduction_au_jeu?action=info" title="Davantage d’informations sur cette page"><span>Informations sur la page</span></a></li><li id="t-cite" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Citer?page=Introduction_au_jeu&amp;id=3331&amp;wpFormIdentifier=titleform" title="Informations sur la manière de citer cette page"><span>Citer cette page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:UrlShortener?url=https%3A%2F%2Femushpedia.miraheze.org%2Fwiki%2FIntroduction_au_jeu"><span>Obtenir l&#039;URL raccourcie</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu-portal portal vector-menu" aria-labelledby="p-navigation-label"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-specialpages" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Pages_sp%C3%A9ciales"><span>Pages spéciales</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> La dernière modification de cette page a été faite le 5 novembre 2025 à 16:55.</li>
+	<li id="footer-info-copyright">Le contenu est disponible sous licence Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) sauf mention contraire.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Privacy_Policy">Politique de confidentialité</a></li>
+	<li id="footer-places-about"><a href="/wiki/eMushpedia:%C3%80_propos_de">À propos de eMushpedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/eMushpedia:Avertissements_g%C3%A9n%C3%A9raux">Avertissements</a></li>
+	<li id="footer-places-termsofservice"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Terms_of_Use">Conditions d’utilisation</a></li>
+	<li id="footer-places-donate"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Donate/fr">Faire un don à Miraheze</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-mirahezeico"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="https://static.wikitide.net/commonswiki/f/fe/Powered_by_Miraheze_(no_box).svg" alt="Hosted by Miraheze" width="88" height="31" loading="lazy"></a></li>
+	<li id="footer-copyrightico"><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="https://meta.miraheze.org/1.44/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" width="88" height="31" loading="lazy"></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/1.44/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/1.44/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet vector-menu-portal portal" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw191","wgBackendResponseTime":220,"wgPageParseReport":{"limitreport":{"cputime":"0.063","walltime":"0.113","ppvisitednodes":{"value":617,"limit":1000000},"postexpandincludesize":{"value":2434,"limit":2097152},"templateargumentsize":{"value":66,"limit":2097152},"expansiondepth":{"value":5,"limit":100},"expensivefunctioncount":{"value":0,"limit":99},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   26.157      1 -total"," 35.18%    9.201      3 Modèle:Objet"," 24.50%    6.408      2 Modèle:Personnage"," 22.21%    5.809      2 Modèle:PA"," 13.12%    3.433      2 Modèle:PM"]},"cachereport":{"origin":"mw182","timestamp":"20251109184123","ttl":1296000,"transientcontent":false}}});});</script>
+	<script>
+	var _paq = window._paq = window._paq || [];
+	if ( 1 ) {
+		_paq.push(['disableCookies']);
+	}
+	if ( 0 ) {
+		_paq.push(['setRequestMethod', 'GET']);
+	}
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u = "https://analytics.wikitide.net/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']);
+		_paq.push(['setDocumentTitle', "emushpediawiki" + " - " + "Introduction au jeu"]);
+		_paq.push(['setSiteId', 19180]);
+		if ( 1 ) {
+			_paq.push(['setCustomDimension', 1, "User"]);
+		}
+		if ( 1 ) {
+			_paq.push(['addTracker', u + 'matomo.php', 1]);
+		}
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	})();
+	</script>
+	<noscript><p><img src="https://analytics.wikitide.net/matomo.php?idsite=19180&amp;rec=1&amp;action_name=Introduction_au_jeu" style="border: 0;" alt="" /></p></noscript>
+</body>
+</html>
