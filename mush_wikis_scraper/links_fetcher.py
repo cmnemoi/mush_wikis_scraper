@@ -2,7 +2,6 @@
 
 from abc import ABC, abstractmethod
 from typing import Any, Protocol
-from urllib.parse import quote
 
 from mush_wikis_scraper.links import LINKS, NON_EMUSHPEDIA_LINKS
 
@@ -115,6 +114,5 @@ class EmushpediaApiFetcher(LinksFetcher):
         return response.json()
 
     def _build_url(self, title: str) -> str:
-        # Encode special characters (spaces, accents, etc.)
-        encoded_title = quote(title, safe="")
-        return f"{EMUSHPEDIA_BASE_URL}/{encoded_title}"
+        # Replace spaces with underscores (MediaWiki style), keep Unicode raw
+        return f"{EMUSHPEDIA_BASE_URL}/{title.replace(' ', '_')}"

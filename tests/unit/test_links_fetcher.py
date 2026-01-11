@@ -85,9 +85,9 @@ async def test_emushpedia_api_fetcher_single_page() -> None:
     fetcher = EmushpediaApiFetcher(http_client)
     links = await fetcher.get_links()
 
-    # then I should get eMushpedia URLs plus non-eMushpedia links (properly encoded)
-    assert "https://emushpedia.miraheze.org/wiki/Abn%C3%A9gation" in links
-    assert "https://emushpedia.miraheze.org/wiki/Accueil%2Ffr" in links
+    # then I should get eMushpedia URLs plus non-eMushpedia links (with raw Unicode)
+    assert "https://emushpedia.miraheze.org/wiki/Abnégation" in links
+    assert "https://emushpedia.miraheze.org/wiki/Accueil/fr" in links
     assert "https://emushpedia.miraheze.org/wiki/Actions" in links
     # Should also include non-eMushpedia links
     assert any("archive_aide_aux_bolets" in link for link in links)
@@ -140,10 +140,10 @@ async def test_emushpedia_api_fetcher_url_encoding() -> None:
     fetcher = EmushpediaApiFetcher(http_client)
     links = await fetcher.get_links()
 
-    # then URLs should be properly encoded
-    assert "https://emushpedia.miraheze.org/wiki/Title%20with%20spaces" in links
-    assert "https://emushpedia.miraheze.org/wiki/%C3%89t%C3%A9" in links
-    assert "https://emushpedia.miraheze.org/wiki/L%27apostrophe" in links
+    # then URLs should keep raw Unicode, spaces as underscores
+    assert "https://emushpedia.miraheze.org/wiki/Title_with_spaces" in links
+    assert "https://emushpedia.miraheze.org/wiki/Été" in links
+    assert "https://emushpedia.miraheze.org/wiki/L'apostrophe" in links
 
 
 @pytest.mark.asyncio
