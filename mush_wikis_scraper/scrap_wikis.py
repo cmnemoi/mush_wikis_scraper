@@ -14,7 +14,7 @@ ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source
 
 class ScrapWikis:
     def __init__(self, page_reader: PageReader, progress_callback: Optional[ProgressCallback] = None) -> None:
-        """Scraper for Mushpedia, Twinpedia, Aide aux Bolets and Mush Forums.
+        """Scraper for eMushpedia, Aide aux Bolets and Mush Forums.
 
         Args:
             page_reader (PageReader): The page reader to use.
@@ -91,7 +91,7 @@ class ScrapWikis:
         parts = link.split("/")
 
         if source == "eMushpedia":
-            return parts[-1].replace("-", " ").capitalize()
+            return parts[-1].replace("_", " ").capitalize()
 
         if source in ("Aide aux Bolets", "Mush Forums"):
             tag = page_parser.select_one("span.tid_title")

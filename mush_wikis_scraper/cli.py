@@ -18,7 +18,7 @@ def main(
     ),
     url: list[str] = typer.Option(None, help="List of specific URLs to scrap. Must be URLs from the predefined list."),
 ) -> None:
-    """Scrap Mushpedia, Twinpedia, Aide aux Bolets and Mush Forums."""
+    """Scrap eMushpedia wiki, Aide aux Bolets and Q&A Mush Forums."""
     links_to_scrap = _get_links_to_scrap(url)
     nb_pages_to_scrap = limit if limit else len(links_to_scrap)
     links_to_scrap = links_to_scrap[:nb_pages_to_scrap]

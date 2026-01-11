@@ -9,7 +9,7 @@ from mush_wikis_scraper.scrap_wikis import ScrapWikis
     [
         {
             "title": "Introduction au jeu",
-            "link": "tests/data/emushpedia.miraheze.org/introduction-au-jeu",
+            "link": "tests/data/emushpedia.miraheze.org/introduction_au_jeu",
             "source": "eMushpedia",
             "content": "eMush est un jeu via navigateur issu de Mush, initialement développé par Motion Twin, puis repris par la communauté pour continuer à le faire vivre malgré la fermeture définitive de Flash Player.",
         },
