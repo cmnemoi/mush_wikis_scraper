@@ -1,5 +1,6 @@
 import asyncio
 import json
+import logging
 
 import httpx
 import typer
@@ -9,6 +10,9 @@ from mush_wikis_scraper import HttpPageReader, ScrapWikis
 from mush_wikis_scraper.links_fetcher import EmushpediaApiFetcher, StaticLinksFetcher
 
 cli = typer.Typer()
+
+# Configure logging
+logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
 
 
 @cli.command()

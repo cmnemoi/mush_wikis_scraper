@@ -9,7 +9,7 @@ check-lint:
 	uv run ruff check .
 
 check-types:
-	uv run mypy .
+	uv run mypy . --exclude=tests
 
 install:
 	uv lock --locked

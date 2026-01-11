@@ -1,6 +1,9 @@
+import logging
+
 import pytest
 
 from mush_wikis_scraper import FileSystemPageReader
+from mush_wikis_scraper.page_reader import PageReader
 from mush_wikis_scraper.scrap_wikis import ScrapWikis
 
 
@@ -149,3 +152,95 @@ async def test_execute_with_unknown_format() -> None:
     scraper = ScrapWikis(FileSystemPageReader())
     with pytest.raises(ValueError):
         await scraper.execute(page_links, format="unknown")
+
+
+class FakeFailingPageReader:
+    """Fake PageReader that always fails."""
+
+    async def get(self, path: str) -> str:
+        """Always raise an exception."""
+        raise RuntimeError(f"Failed to fetch: {path}")
+
+
+@pytest.mark.asyncio
+async def test_execute_handles_individual_page_failures() -> None:
+    """Test that ScrapWikis continues scraping even when some pages fail."""
+    # given I have a mix of working and failing page links
+    page_links = [
+        "tests/data/emushpedia.miraheze.org/introduction-au-jeu",
+        "https://failing-page.com/page1",
+        "tests/data/cmnemoi.github.io/archive_aide_aux_bolets/a-lire-je-debute-partie-1",
+    ]
+
+    # and a page reader that fails for some pages
+    class SelectiveFailingPageReader(PageReader):
+        async def get(self, path: str) -> str:
+            if "failing-page" in path:
+                raise RuntimeError(f"Failed to fetch: {path}")
+            return await FileSystemPageReader().get(path)
+
+    scraper = ScrapWikis(SelectiveFailingPageReader())
+
+    # when I run the scraper
+    pages = await scraper.execute(page_links)
+
+    # then I should get results only for successful pages
+    assert len(pages) == 2
+    # and successful pages should have content
+    assert pages[0]["title"] == "Introduction-au-jeu"
+    assert pages[1]["title"] == "[A lire] Je débute - Partie 1"
+    # and failed pages are logged but not in results
+
+
+@pytest.mark.asyncio
+async def test_execute_continues_after_page_failure() -> None:
+    """Test that ScrapWikis continues scraping after encountering a failure."""
+    # given I have multiple page links where the first one fails
+    page_links = [
+        "https://failing-page.com/page1",
+        "tests/data/emushpedia.miraheze.org/introduction-au-jeu",
+    ]
+
+    # and a page reader that fails for the first page
+    class SelectiveFailingPageReader(PageReader):
+        async def get(self, path: str) -> str:
+            if "failing-page" in path:
+                raise RuntimeError(f"Failed to fetch: {path}")
+            return await FileSystemPageReader().get(path)
+
+    scraper = ScrapWikis(SelectiveFailingPageReader())
+
+    # when I run the scraper
+    pages = await scraper.execute(page_links)
+
+    # then I should get results only for successful pages
+    assert len(pages) == 1
+    # and the second page should be successfully scraped
+    assert pages[0]["title"] == "Introduction-au-jeu"
+    assert "eMush est un jeu" in pages[0]["content"]
+
+
+@pytest.mark.asyncio
+async def test_execute_logs_failed_pages(caplog: pytest.LogCaptureFixture) -> None:
+    """Test that ScrapWikis logs failed pages as warnings."""
+    # given I have a page that will fail
+    page_links = ["https://failing-page.com/page1"]
+
+    # and a page reader that fails
+    class FailingPageReader(PageReader):
+        async def get(self, path: str) -> str:
+            raise RuntimeError("Connection failed")
+
+    scraper = ScrapWikis(FailingPageReader())
+
+    # when I run the scraper with logging enabled
+    with caplog.at_level(logging.WARNING):
+        pages = await scraper.execute(page_links)
+
+    # then the error should be logged as a warning
+    assert len(caplog.records) == 1
+    assert caplog.records[0].levelname == "WARNING"
+    assert "Failed to scrape page https://failing-page.com/page1" in caplog.records[0].message
+    assert "Connection failed" in caplog.records[0].message
+    # and no results should be returned
+    assert len(pages) == 0
