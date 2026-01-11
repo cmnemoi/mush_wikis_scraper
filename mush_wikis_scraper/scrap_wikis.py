@@ -1,5 +1,4 @@
-from concurrent.futures import ThreadPoolExecutor
-from multiprocessing import cpu_count
+import asyncio
 from typing import Callable, Optional, TypedDict
 
 import trafilatura
@@ -24,25 +23,22 @@ class ScrapWikis:
         self.page_reader = page_reader
         self.progress_callback = progress_callback
 
-    def execute(self, wiki_links: list[str], max_workers: int = -1, format: str = "html") -> list[ScrapingResult]:
+    async def execute(self, wiki_links: list[str], format: str = "html") -> list[ScrapingResult]:
         """Execute the use case on the given links.
 
         Args:
             wiki_links (list[str]): A list of wiki article links.
-            max_workers (int, optional): The maximum number of workers to use. Defaults to -1, which will use 2 * number of CPUs cores available.
             format (str, optional): The format of the output. Defaults to "html".
 
         Returns:
             list[ScrapingResult]: A list of scrapped wiki articles with article title, link and content in selected format.
         """
-        nb_workers = self._get_workers(max_workers, wiki_links)
-        with ThreadPoolExecutor(max_workers=nb_workers) as executor:
-            results = list(executor.map(self._scrap_page, wiki_links, [format] * len(wiki_links)))
+        tasks = [self._scrap_page(link, format) for link in wiki_links]
+        results = await asyncio.gather(*tasks)
+        return list(results)
 
-        return [result for result in results]
-
-    def _scrap_page(self, page_reader_link: str, format: str) -> ScrapingResult:
-        page_parser = BeautifulSoup(self.page_reader.get(page_reader_link), "html.parser")
+    async def _scrap_page(self, page_reader_link: str, format: str) -> ScrapingResult:
+        page_parser = BeautifulSoup(await self.page_reader.get(page_reader_link), "html.parser")
         if self.progress_callback is not None:
             self.progress_callback(1)
 
@@ -68,13 +64,8 @@ class ScrapWikis:
             "title": self._get_title_from(page_reader_link, page_parser),
             "link": page_reader_link,
             "source": self._get_source_from_link(page_reader_link),
-            "content": content,
+            "content": content,  # type: ignore
         }
-
-    def _get_workers(self, max_workers: int, wiki_links: list[str]) -> int:
-        workers = max_workers if max_workers > 0 else 2 * cpu_count()
-
-        return min(workers, len(wiki_links))
 
     def _get_source_from_link(self, link: str) -> str:
         if "emushpedia" in link:

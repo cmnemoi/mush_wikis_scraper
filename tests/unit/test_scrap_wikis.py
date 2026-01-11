@@ -4,6 +4,7 @@ from mush_wikis_scraper import FileSystemPageReader
 from mush_wikis_scraper.scrap_wikis import ScrapWikis
 
 
+@pytest.mark.asyncio
 @pytest.mark.parametrize(
     "page_data",
     [
@@ -27,13 +28,13 @@ from mush_wikis_scraper.scrap_wikis import ScrapWikis
         },
     ],
 )
-def test_execute(page_data) -> None:
+async def test_execute(page_data) -> None:
     # given I have page links
     page_links = [page_data["link"]]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links)
+    pages = await scraper.execute(page_links)
 
     # then I should get the pages content
     page = pages[0]
@@ -44,99 +45,107 @@ def test_execute(page_data) -> None:
     assert page_data["content"] in page["content"]
 
 
+@pytest.mark.asyncio
 @pytest.mark.parametrize(
     "format",
     ["html"],
 )
-def test_remove_line_breaks(format: str) -> None:
+async def test_remove_line_breaks(format: str) -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format=format)
+    pages = await scraper.execute(page_links, format=format)
 
     # then I should get the pages content without line breaks
     assert pages[0]["content"].count("\n") == 0
 
 
-def test_execute_with_html_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_html_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format="html")
+    pages = await scraper.execute(page_links, format="html")
 
     # then I should get the pages content in HTML format
     assert pages[0]["content"].startswith("<!DOCTYPE html>")
 
 
-def test_execute_with_text_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_text_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format="text")
+    pages = await scraper.execute(page_links, format="text")
 
     # then I should get the pages content without HTML tags
     assert "<!DOCTYPE html>" not in pages[0]["content"]
 
 
-def test_execute_with_markdown_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_markdown_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format="markdown")
+    pages = await scraper.execute(page_links, format="markdown")
 
     # then I should get the pages content in Markdown format
     assert "Introduction au jeu\n===================" in pages[0]["content"]
 
 
-def test_execute_with_trafilatura_markdown_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_trafilatura_markdown_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format="trafilatura-markdown")
+    pages = await scraper.execute(page_links, format="trafilatura-markdown")
 
     # then I should get the pages content in Markdown trafilatura format
     assert "# Introduction au jeu" in pages[0]["content"]
 
 
-def test_execute_with_trafilatura_html_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_trafilatura_html_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format="trafilatura-html")
+    pages = await scraper.execute(page_links, format="trafilatura-html")
 
     # then I should get the pages content in HTML trafilatura format
     assert "<h1>Introduction au jeu</h1>" in pages[0]["content"]
 
 
-def test_execute_with_trafilatura_text_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_trafilatura_text_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
-    pages = scraper.execute(page_links, format="trafilatura-text")
+    pages = await scraper.execute(page_links, format="trafilatura-text")
 
     # then I should get the pages content in text trafilatura format
     assert "# Introduction au jeu\n\n###\nQu'est-ce que\n*\neMush\n" in pages[0]["content"]
 
 
-def test_execute_with_unknown_format() -> None:
+@pytest.mark.asyncio
+async def test_execute_with_unknown_format() -> None:
     # given I have page links
     page_links = ["tests/data/emushpedia.miraheze.org/introduction-au-jeu"]
 
     # when I run the scraper
     scraper = ScrapWikis(FileSystemPageReader())
     with pytest.raises(ValueError):
-        scraper.execute(page_links, format="unknown")
+        await scraper.execute(page_links, format="unknown")
