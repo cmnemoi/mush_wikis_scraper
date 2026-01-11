@@ -18,8 +18,8 @@
         {
             "splitTerminals": [
                 {
-                    "name": "aider",
-                    "commands": ["aider --env $HOME/.aider.env"]
+                    "name": "opencode",
+                    "commands": ["opencode"]
                 },
             ]
         }
