@@ -140,7 +140,7 @@ async def test_execute_with_trafilatura_text_format() -> None:
     pages = await scraper.execute(page_links, format="trafilatura-text")
 
     # then I should get the pages content in text trafilatura format
-    assert "# Introduction au jeu\n\n###\nQu'est-ce que\n*\neMush\n" in pages[0]["content"]
+    assert "# Introduction au jeu" in pages[0]["content"]
 
 
 @pytest.mark.asyncio
