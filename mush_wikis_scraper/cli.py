@@ -7,7 +7,7 @@ import typer
 from tqdm import tqdm
 
 from mush_wikis_scraper import HttpPageReader, ScrapWikis
-from mush_wikis_scraper.links_fetcher import EmushpediaApiFetcher, StaticLinksFetcher
+from mush_wikis_scraper.links_fetcher import EmushpediaApiFetcher
 
 cli = typer.Typer()
 
@@ -23,19 +23,15 @@ def main(
         help="Format of the output. Can be `html`, `text`, `markdown`, `trafilatura-markdown`, `trafilatura-html` or `trafilatura-text`.",
     ),
     url: list[str] = typer.Option(None, help="List of specific URLs to scrap. Must be URLs from the predefined list."),
-    use_local_links: bool = typer.Option(
-        False,
-        help="Use local hardcoded links instead of fetching from eMushpedia API. Useful for reproducibility and offline usage.",
-    ),
 ) -> None:
-    """Scrap eMushpedia wiki, Aide aux Bolets and Q&A Mush Forums."""
-    asyncio.run(_scrap(limit, format, url, use_local_links))
+    """Scrap the French, English, and Spanish eMushpedia wikis."""
+    asyncio.run(_scrap(limit, format, url))
 
 
-async def _scrap(limit: int | None, format: str, url: list[str] | None, use_local_links: bool) -> None:
+async def _scrap(limit: int | None, format: str, url: list[str] | None) -> None:
     """Async implementation of the main CLI function."""
     async with httpx.AsyncClient(timeout=60, follow_redirects=True) as http_client:
-        links_to_scrap = await _get_links_to_scrap(http_client, url, use_local_links)
+        links_to_scrap = await _get_links_to_scrap(http_client, url)
         nb_pages_to_scrap = limit if limit else len(links_to_scrap)
         links_to_scrap = links_to_scrap[:nb_pages_to_scrap]
 
@@ -45,11 +41,8 @@ async def _scrap(limit: int | None, format: str, url: list[str] | None, use_loca
         print(json.dumps(pages, indent=4, ensure_ascii=False))
 
 
-async def _get_links_to_scrap(
-    http_client: httpx.AsyncClient, url: list[str] | None = None, use_local_links: bool = False
-) -> list[str]:
-    fetcher = StaticLinksFetcher() if use_local_links else EmushpediaApiFetcher(http_client)
-    all_links = await fetcher.get_links()
+async def _get_links_to_scrap(http_client: httpx.AsyncClient, url: list[str] | None = None) -> list[str]:
+    all_links = await EmushpediaApiFetcher(http_client).get_links()  # @spec supported-wiki::api-only-discovery
 
     # If specific URLs are provided, validate and filter them
     if url is None:

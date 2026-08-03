@@ -2,20 +2,7 @@ from typing import Any
 
 import pytest
 
-from mush_wikis_scraper.links import LINKS
-from mush_wikis_scraper.links_fetcher import EmushpediaApiFetcher, StaticLinksFetcher
-
-
-@pytest.mark.asyncio
-async def test_static_links_fetcher() -> None:
-    # given I have a static links fetcher
-    fetcher = StaticLinksFetcher()
-
-    # when I fetch links
-    links = await fetcher.get_links()
-
-    # then I should get all links from the LINKS constant
-    assert links == LINKS
+from mush_wikis_scraper.links_fetcher import EmushpediaApiFetcher
 
 
 class FakeHttpResponse:
@@ -85,14 +72,13 @@ async def test_emushpedia_api_fetcher_single_page() -> None:
     fetcher = EmushpediaApiFetcher(http_client)
     links = await fetcher.get_links()
 
-    # then I should get eMushpedia URLs plus non-eMushpedia links (with raw Unicode)
-    assert "https://emushpedia.miraheze.org/wiki/Abnégation" in links
-    assert "https://emushpedia.miraheze.org/wiki/Accueil/fr" in links
-    assert "https://emushpedia.miraheze.org/wiki/Actions" in links
-    # Should also include non-eMushpedia links
-    assert any("archive_aide_aux_bolets" in link for link in links)
-    # Should call API only once (no pagination needed)
-    assert http_client.call_count == 1
+    # then I should get French eMushpedia URLs (with raw Unicode)
+    assert "https://fr.emushpedia.com/wiki/Abnégation" in links
+    assert "https://fr.emushpedia.com/wiki/Accueil/fr" in links
+    assert "https://fr.emushpedia.com/wiki/Actions" in links
+    assert all(link.startswith("https://fr.emushpedia.com/wiki/") for link in links)
+    # Should call each localized API once (no pagination needed)
+    assert http_client.call_count == 3
 
 
 @pytest.mark.asyncio
@@ -106,17 +92,17 @@ async def test_emushpedia_api_fetcher_pagination() -> None:
         "batchcomplete": "",
         "query": {"allpages": [{"pageid": 2, "ns": 0, "title": "Page_B"}]},
     }
-    http_client = FakeHttpClient([first_response, second_response])
+    http_client = FakeHttpClient([first_response, second_response, {}, {}])
 
     # when I fetch links from the API
     fetcher = EmushpediaApiFetcher(http_client)
     links = await fetcher.get_links()
 
     # then I should get pages from both API calls
-    assert "https://emushpedia.miraheze.org/wiki/Page_A" in links
-    assert "https://emushpedia.miraheze.org/wiki/Page_B" in links
-    # Should call API twice (pagination)
-    assert http_client.call_count == 2
+    assert "https://fr.emushpedia.com/wiki/Page_A" in links
+    assert "https://fr.emushpedia.com/wiki/Page_B" in links
+    # Should paginate the French API and call the other localized APIs once
+    assert http_client.call_count == 4
     # Second call should include the continuation parameter
     assert "apcontinue=Page_B" in http_client.urls_called[1]
 
@@ -141,13 +127,13 @@ async def test_emushpedia_api_fetcher_url_encoding() -> None:
     links = await fetcher.get_links()
 
     # then URLs should keep raw Unicode, spaces as underscores
-    assert "https://emushpedia.miraheze.org/wiki/Title_with_spaces" in links
-    assert "https://emushpedia.miraheze.org/wiki/Été" in links
-    assert "https://emushpedia.miraheze.org/wiki/L'apostrophe" in links
+    assert "https://fr.emushpedia.com/wiki/Title_with_spaces" in links
+    assert "https://fr.emushpedia.com/wiki/Été" in links
+    assert "https://fr.emushpedia.com/wiki/L'apostrophe" in links
 
 
 @pytest.mark.asyncio
-async def test_emushpedia_api_fetcher_combines_with_non_emushpedia() -> None:
+async def test_emushpedia_api_fetcher_only_calls_supported_wikis() -> None:
     # given I have an API response
     api_response = {
         "batchcomplete": "",
@@ -159,13 +145,27 @@ async def test_emushpedia_api_fetcher_combines_with_non_emushpedia() -> None:
     fetcher = EmushpediaApiFetcher(http_client)
     links = await fetcher.get_links()
 
-    # then I should get both eMushpedia and non-eMushpedia links
-    emushpedia_links = [link for link in links if "emushpedia" in link]
-    aide_aux_bolets_links = [link for link in links if "archive_aide_aux_bolets" in link]
-    forum_links = [link for link in links if "twinoid-archives.netlify.app" in link]
+    # then only supported eMushpedia APIs should be called
+    assert links == ["https://fr.emushpedia.com/wiki/Test"]
+    assert [url.split("/")[2] for url in http_client.urls_called] == [
+        "fr.emushpedia.com",
+        "en.emushpedia.com",
+        "es.emushpedia.com",
+    ]  # @spec supported-wiki::supports-localized-emushpedia
 
-    assert len(emushpedia_links) > 0
-    assert len(aide_aux_bolets_links) > 0
-    assert len(forum_links) > 0
-    # Should have eMushpedia link from API
-    assert "https://emushpedia.miraheze.org/wiki/Test" in links
+
+@pytest.mark.asyncio
+async def test_emushpedia_api_fetcher_returns_all_supported_languages() -> None:
+    # Given one page from each localized eMushpedia API
+    responses = [{"query": {"allpages": [{"title": title}]}} for title in ("Accueil", "Home", "Inicio")]
+    http_client = FakeHttpClient(responses)
+
+    # When links are fetched
+    links = await EmushpediaApiFetcher(http_client).get_links()
+
+    # Then all supported localized wikis are returned
+    assert links == [
+        "https://fr.emushpedia.com/wiki/Accueil",
+        "https://en.emushpedia.com/wiki/Home",
+        "https://es.emushpedia.com/wiki/Inicio",
+    ]  # @spec supported-wiki::supports-localized-emushpedia

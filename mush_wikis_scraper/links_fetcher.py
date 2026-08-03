@@ -1,12 +1,8 @@
 """Links fetcher for eMushpedia wiki articles."""
 
-from abc import ABC, abstractmethod
 from typing import Any, Protocol
 
-from mush_wikis_scraper.links import LINKS, NON_EMUSHPEDIA_LINKS
-
-EMUSHPEDIA_API_URL = "https://emushpedia.miraheze.org/w/api.php"
-EMUSHPEDIA_BASE_URL = "https://emushpedia.miraheze.org/wiki"
+EMUSHPEDIA_HOSTS = ("fr.emushpedia.com", "en.emushpedia.com", "es.emushpedia.com")
 
 
 class HttpResponse(Protocol):
@@ -36,32 +32,7 @@ class HttpClient(Protocol):
         ...  # pragma: no cover
 
 
-class LinksFetcher(ABC):
-    """Abstract base class for fetching wiki links."""
-
-    @abstractmethod
-    async def get_links(self) -> list[str]:
-        """Fetch all wiki links.
-
-        Returns:
-            list[str]: List of wiki article URLs.
-        """
-        pass  # pragma: no cover
-
-
-class StaticLinksFetcher(LinksFetcher):
-    """Fetcher that returns hardcoded links from links.py file."""
-
-    async def get_links(self) -> list[str]:
-        """Return hardcoded links from LINKS constant.
-
-        Returns:
-            list[str]: List of hardcoded wiki article URLs.
-        """
-        return LINKS
-
-
-class EmushpediaApiFetcher(LinksFetcher):
+class EmushpediaApiFetcher:
     """Fetcher that retrieves eMushpedia links from MediaWiki API."""
 
     def __init__(self, http_client: HttpClient) -> None:
@@ -73,20 +44,22 @@ class EmushpediaApiFetcher(LinksFetcher):
         self.http_client = http_client
 
     async def get_links(self) -> list[str]:
-        """Fetch eMushpedia links from API and combine with non-eMushpedia links.
+        """Fetch localized eMushpedia links from their APIs.
 
         Returns:
-            list[str]: List of all wiki article URLs (eMushpedia from API + others from file).
+            list[str]: List of French, English, and Spanish article URLs.
         """
-        emushpedia_links = await self._fetch_emushpedia_links()
-        return emushpedia_links + NON_EMUSHPEDIA_LINKS
+        links: list[str] = []  # @spec supported-wiki::supports-localized-emushpedia
+        for host in EMUSHPEDIA_HOSTS:
+            links.extend(await self._fetch_emushpedia_links(host))
+        return links
 
-    async def _fetch_emushpedia_links(self) -> list[str]:
+    async def _fetch_emushpedia_links(self, host: str) -> list[str]:
         all_pages: list[dict[str, Any]] = []
         continue_token: str | None = None
 
         while True:
-            response_data = await self._fetch_api_page(continue_token)
+            response_data = await self._fetch_api_page(host, continue_token)
 
             # Add pages from current response
             if "query" in response_data and "allpages" in response_data["query"]:
@@ -99,20 +72,20 @@ class EmushpediaApiFetcher(LinksFetcher):
             continue_token = response_data["continue"].get("apcontinue")
 
         # Convert page titles to URLs
-        return [self._build_url(page["title"]) for page in all_pages]
+        return [self._build_url(host, page["title"]) for page in all_pages]
 
-    async def _fetch_api_page(self, continue_token: str | None = None) -> dict[str, Any]:
+    async def _fetch_api_page(self, host: str, continue_token: str | None = None) -> dict[str, Any]:
         params = {"action": "query", "list": "allpages", "aplimit": "max", "format": "json"}
 
         if continue_token:
             params["apcontinue"] = continue_token
 
         # Build URL with query parameters
-        url = f"{EMUSHPEDIA_API_URL}?{'&'.join(f'{key}={value}' for key, value in params.items())}"
+        url = f"https://{host}/api.php?{'&'.join(f'{key}={value}' for key, value in params.items())}"
 
         response = await self.http_client.get(url)
         return response.json()
 
-    def _build_url(self, title: str) -> str:
+    def _build_url(self, host: str, title: str) -> str:
         # Replace spaces with underscores (MediaWiki style), keep Unicode raw
-        return f"{EMUSHPEDIA_BASE_URL}/{title.replace(' ', '_')}"
+        return f"https://{host}/wiki/{title.replace(' ', '_')}"

@@ -18,7 +18,7 @@ class ScrapWikis:
     def __init__(
         self, page_reader: PageReader, progress_callback: Optional[ProgressCallback] = None, max_concurrent: int = 10
     ) -> None:
-        """Scraper for eMushpedia, Aide aux Bolets and Mush Forums.
+        """Scraper for the French, English, and Spanish eMushpedia wikis.
 
         Args:
             page_reader (PageReader): The page reader to use.
