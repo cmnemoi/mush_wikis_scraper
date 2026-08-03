@@ -1,6 +1,7 @@
 import asyncio
 import json
 import logging
+from typing import Annotated
 
 import httpx
 import typer
@@ -17,12 +18,18 @@ logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
 
 @cli.command()
 def main(
-    limit: int = typer.Option(None, help="Number of pages to scrap. Will scrap all pages if not set."),
-    format: str = typer.Option(
-        "trafilatura-markdown",
-        help="Format of the output. Can be `html`, `text`, `markdown`, `trafilatura-markdown`, `trafilatura-html` or `trafilatura-text`.",
-    ),
-    url: list[str] = typer.Option(None, help="List of specific URLs to scrap. Must be URLs from the predefined list."),
+    limit: Annotated[
+        int | None, typer.Option(help="Number of pages to scrap. Will scrap all pages if not set.")
+    ] = None,
+    format: Annotated[
+        str,
+        typer.Option(
+            help="Format of the output. Can be `html`, `text`, `markdown`, `trafilatura-markdown`, `trafilatura-html` or `trafilatura-text`."
+        ),
+    ] = "trafilatura-markdown",
+    url: Annotated[
+        list[str] | None, typer.Option(help="List of specific URLs to scrap. Must be URLs from the predefined list.")
+    ] = None,
 ) -> None:
     """Scrap the French, English, and Spanish eMushpedia wikis."""
     asyncio.run(_scrap(limit, format, url))

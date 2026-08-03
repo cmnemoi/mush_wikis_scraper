@@ -35,8 +35,8 @@ def test_cli_with_invalid_urls():
     invalid_urls = ["https://invalid.url", "https://another.invalid"]
     result = runner.invoke(cli, ["--url", invalid_urls[0], "--url", invalid_urls[1]])
     assert result.exit_code == 1
-    assert "Error: The following URLs are not in the available links:" in result.stdout
-    assert all(url in result.stdout for url in invalid_urls)
+    assert "Error: The following URLs are not in the available links:" in result.stderr
+    assert all(url in result.stderr for url in invalid_urls)
 
 
 def test_cli_rejects_legacy_wiki_url():
@@ -48,7 +48,7 @@ def test_cli_rejects_legacy_wiki_url():
 def test_cli_with_mixed_urls():
     result = runner.invoke(cli, ["--url", EMUSHPEDIA_LINKS[0], "--url", "https://invalid.url"])
     assert result.exit_code == 1
-    assert "https://invalid.url" in result.stdout
+    assert "https://invalid.url" in result.stderr
 
 
 def test_cli_urls_with_limit():

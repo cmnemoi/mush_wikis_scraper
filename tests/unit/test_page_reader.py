@@ -1,5 +1,6 @@
 import pytest
 from httpx import ConnectError
+from typing_extensions import Self
 
 from mush_wikis_scraper.page_reader import HttpPageReader
 
@@ -19,7 +20,7 @@ class FakeHttpxClient:
             raise ConnectError("Connection failed")
         return FakeResponse()
 
-    async def __aenter__(self) -> "FakeHttpxClient":
+    async def __aenter__(self) -> Self:
         return self
 
     async def __aexit__(self, exc_type, exc_val, exc_tb) -> None:

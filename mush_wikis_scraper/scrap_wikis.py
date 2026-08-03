@@ -1,6 +1,7 @@
 import asyncio
 import logging
-from typing import Callable, Optional, TypedDict, cast
+from collections.abc import Callable
+from typing import TypedDict, cast
 
 import trafilatura
 from bs4 import BeautifulSoup
@@ -16,7 +17,7 @@ ScrapingResult = TypedDict("ScrapingResult", {"title": str, "link": str, "source
 
 class ScrapWikis:
     def __init__(
-        self, page_reader: PageReader, progress_callback: Optional[ProgressCallback] = None, max_concurrent: int = 10
+        self, page_reader: PageReader, progress_callback: ProgressCallback | None = None, max_concurrent: int = 10
     ) -> None:
         """Scraper for the French, English, and Spanish eMushpedia wikis.
 
@@ -58,7 +59,7 @@ class ScrapWikis:
         processed_results: list[ScrapingResult] = []
         for i, result in enumerate(results):
             if isinstance(result, Exception):
-                logger.warning(f"Failed to scrape page {wiki_links[i]}: {str(result)}")
+                logger.warning(f"Failed to scrape page {wiki_links[i]}: {result!s}")
             else:
                 # Type narrowing: we know result is ScrapingResult here
                 processed_results.append(cast(ScrapingResult, result))
